@@ -1,0 +1,21 @@
+{
+  "name": "untp-extention",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gs-gs/untp-extention.git",
+  "author": "Ashley Harwood <ashley.harwood@gosource.com.au>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .website --ext .ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "typescript-eslint": "^7.9.0"
+  }
+}
