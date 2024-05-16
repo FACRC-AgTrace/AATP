@@ -1,11 +1,10 @@
-# spec-untp
+# untp-extention
 
 UN Transparency Protocol Extension
 
 # Website
 
 This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
-To run it locally
 
 ### Prerequisite
 Node: 20.9.0
@@ -18,6 +17,8 @@ nvm install
 
 Need nvm? https://github.com/nvm-sh/nvm
 
+
+To run it locally
 
 ### Go to the website folder
 
