@@ -1,23 +1,10 @@
-# untp-extention
+# spec-aatp
 
-UN Transparency Protocol Extension
+Australian Agriculture Traceability Protocol
 
 # Website
 
-This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
-
-### Prerequisite
-Node: 20.9.0
-Yarn: 1.22.22
-
-### Node version
-nvm use
-or
-nvm install
-
-Need nvm? https://github.com/nvm-sh/nvm
-
-
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 To run it locally
 
 ### Go to the website folder
