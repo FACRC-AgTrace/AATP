@@ -9,10 +9,9 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Versions
 
-|DPCC Version|Date|status|JSON-LD Context|JSON Schema|
-|--|--|--|--|
-| | | | |
-
+| DPCC Version | Date | status | JSON-LD Context | JSON Schema |
+| ------------ | ---- | ------ | --------------- | ----------- |
+|              |      |        |                 |
 
 ## Overview
 
@@ -24,11 +23,11 @@ Conformity credentials are usually issued by independent third parties and provi
 
 ## Requirements
 
-The digital product conformity credential (DPCC) is designed to meet the following detailed requirements as well as the more general [UNTP Requirements(https://uncefact.github.io/spec-untp/docs/about/Requirements)]
+The digital product conformity credential (DPCC) is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://uncefact.github.io/spec-untp/docs/about/Requirements)
 
-|ID|Name|Requirement Statement|Solution Mapping|
-|--|--|--|--|
-| | | |
+| ID  | Name | Requirement Statement | Solution Mapping |
+| --- | ---- | --------------------- | ---------------- |
+|     |      |                       |
 
 ## Logical Model
 
@@ -36,13 +35,11 @@ The UNTP logical model upon which AATP industry extensions are based.
 
 ![Conformity Credential](ConformityCredential.svg)
 
-
 ## Deforestation Credential
 
 ## Water Usage Credential
 
 ## Emissions Intensity Credential
-
 
 ## Sample
 
@@ -319,10 +316,3 @@ The UNTP logical model upon which AATP industry extensions are based.
   }
 }
 ```
-
-
-
-
-
-
-

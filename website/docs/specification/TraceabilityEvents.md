@@ -9,11 +9,9 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Versions
 
-|traceability Version|Date|status|JSON-LD Context|
-|--|--|--|--|
-| | | | |
-
-
+| traceability Version | Date | status | JSON-LD Context |
+| -------------------- | ---- | ------ | --------------- |
+|                      |      |        |                 |
 
 ## Overview
 
@@ -25,16 +23,15 @@ Traceability events are very lightweights collections of identifiers that specif
 
 ## Requirements
 
-The traceability event is designed to meet the following detailed requirements as well as the more general [UNTP Requirements(https://uncefact.github.io/spec-untp/docs/about/Requirements)]
+The traceability event is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://uncefact.github.io/spec-untp/docs/about/Requirements)
 
-|ID|Name|Requirement Statement|Solution Mapping|
-|--|--|--|--|
-| | | | |
-
+| ID  | Name | Requirement Statement | Solution Mapping |
+| --- | ---- | --------------------- | ---------------- |
+|     |      |                       |                  |
 
 ## Logical Model
 
-The UNTP logical model upon which AATP extensions re built 
+The UNTP logical model upon which AATP extensions re built
 
 ![Data Model](TraceabilityEvents.svg)
 
