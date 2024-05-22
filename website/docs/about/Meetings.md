@@ -7,21 +7,11 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-
 ## Meetings
 
-AATP development [team meetings](link) are held every fortnight. Each meeting will generally work through open [issues](link) and [pull requests](link).
+AATP development [team meetings](https://example.com/) are held every fortnight. Each meeting will generally work through open [issues](https://example.com/) and [pull requests](https://example.com/).
 
-|Meeting|Agenda|Summary|Recording|
-|---|---|---|---|
-| | | | |
-| | | | |
-
-
-
-
-
-
-
-
-
+| Meeting | Agenda | Summary | Recording |
+| ------- | ------ | ------- | --------- |
+|         |        |         |           |
+|         |        |         |           |

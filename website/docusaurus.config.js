@@ -7,19 +7,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Australian Agriculture Traceability Protocol',
-  tagline: 'Supporting farmers and food manufacturers with a free, open and scalable traceability and transparency framework that meets the safety and sustainability requirements of domestic and export markets.',
+  tagline:
+    'Supporting farmers and food manufacturers with a free, open and scalable traceability and transparency framework that meets the safety and sustainability requirements of domestic and export markets.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://uncefact.github.io',
+  url: 'https://gs-gs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/aatp/',
+  baseUrl: '/untp-extension/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'uncefact', // Usually your GitHub org/user name.
-  projectName: 'spec-untp', // Usually your repo name.
+  organizationName: 'GoSource', // Usually your GitHub org/user name.
+  projectName: 'untp-extension', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,14 +42,14 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/docs',
           editUrl: ({versionDocsDirPath, docPath}) =>
-            `https://github.com/uncefact/spec-untp/edit/main/website/${versionDocsDirPath}/${docPath}`,
+            `https://github.com/gs-gs/untp-extension/edit/main/website/${versionDocsDirPath}/${docPath}`,
         },
         blog: false,
         theme: {
           customCss: [
             require.resolve('./src/css/custom.scss'),
-            require.resolve('./src/css/index.scss')
-          ]
+            require.resolve('./src/css/index.scss'),
+          ],
         },
       }),
     ],
@@ -59,7 +60,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      slackLink: 'https://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
+      slackLink:
+        'https://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
       colorMode: {
         disableSwitch: true,
       },
@@ -73,9 +75,21 @@ const config = {
         },
         items: [
           {to: '/docs/about', label: 'About the AATP', position: 'right'},
-          {to: '/docs/industry-processes', label: 'Industry processes', position: 'right'},
-          {to: '/docs/specification', label: 'The specification', position: 'right'},
-          {to: '/docs/tools-and-support', label: 'Implementation support', position: 'right'},
+          {
+            to: '/docs/industry-processes',
+            label: 'Industry processes',
+            position: 'right',
+          },
+          {
+            to: '/docs/specification',
+            label: 'The specification',
+            position: 'right',
+          },
+          {
+            to: '/docs/tools-and-support',
+            label: 'Implementation support',
+            position: 'right',
+          },
           {to: '/docs/implementations', label: 'Register', position: 'right'},
           {
             href: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
@@ -109,7 +123,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-
 };
 
 module.exports = config;
