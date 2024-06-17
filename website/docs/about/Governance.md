@@ -30,6 +30,8 @@ Membership is based on participation in the agricultural sector, implementation 
 # Structure
 
 
+![Structural Overview](governance.png)
+
 
 
 
@@ -66,6 +68,8 @@ The governance function needs to integrate updates and feedback from internation
 •	Review Comments
 •	Finalise Recommendations
 •	Publish (following SEMVER standards)
+
+![Lifecycle](lifecycle.png)
 
 
 ## Extension Certification
