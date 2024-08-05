@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: Implementations Register
+title: Implementers
 ---
 
-# Implementations Register
+

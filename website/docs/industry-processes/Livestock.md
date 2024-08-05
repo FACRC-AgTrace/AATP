@@ -7,8 +7,20 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
+## Business Processes
 
-# Livestock Industry
+
+## Identifiers
+
+
+## Lifecycle Analysis
+
+
+## Standards & Regulations
+
+
+## The Future with AATP
+
 
 
 

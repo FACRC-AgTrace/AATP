@@ -1,6 +1,6 @@
 ---
 sidebar_position: 20
-title: Identifiers
+title: Identity Resolvers
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';

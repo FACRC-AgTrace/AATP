@@ -1,6 +1,6 @@
 ---
 sidebar_position: 35
-title: Support
+title: Help & Support
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';

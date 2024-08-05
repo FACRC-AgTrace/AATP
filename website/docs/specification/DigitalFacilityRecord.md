@@ -1,6 +1,6 @@
 ---
-sidebar_position: 5
-title: Product Passports
+sidebar_position: 7
+title: Facility Records
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10
-title: Conformity Credential
+title: Conformity Credentials
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
