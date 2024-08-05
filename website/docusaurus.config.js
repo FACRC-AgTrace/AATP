@@ -92,13 +92,13 @@ const config = {
           },
           {to: '/docs/implementations', label: 'Register', position: 'right'},
           {
-            href: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
+            href: 'https://join.slack.com/t/aatpworkspace/shared_invite/zt-2nyb02frq-IjQUy5MIOZQehSNDktScEA',
             position: 'right',
             html: '<svg class="icon icon-slack"><use xlink:href="#slack"></use></svg><span class="menu-item-name">Slack</span>',
             className: 'navbar-slack-link',
           },
           {
-            href: 'https://github.com/uncefact/spec-untp',
+            href: 'https://github.com/gs-gs/aatp',
             html: '<svg class="icon"><use xlink:href="#github"></use></svg><span class="menu-item-name">Github</span>',
             className: 'navbar-github-link',
             position: 'right',
