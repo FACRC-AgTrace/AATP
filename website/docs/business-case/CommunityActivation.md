@@ -1,6 +1,6 @@
 ---
-sidebar_position: 25
-title: For Regulators
+sidebar_position: 10
+title: Community Activation
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
