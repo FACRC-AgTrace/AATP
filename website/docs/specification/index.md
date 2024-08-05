@@ -13,26 +13,15 @@ The specification is the heart of AATP.  It defines the detailed specifications 
 
 The architecture is the blueprint for all the components of the specification and how they work together. It defines the **design principles** which underpin the AATP and shows the components working together from the perspective of a **single actor** and across the **entire value-chain**. The AATP is a fundamentally **decentralised architecture** with no central store of data.
 
-## Digital Product Passport
+Insert overview diagram here
 
+## Individual Implementers
 
-## Conformity Credential
+![Individual](Architecture-actor.png)
 
+## Entire Value Chain
 
-## Traceability Events
-
-
-## Identifiers
-
-
-## Vocabularies
-
-
-## Verifiable Credentials
-
-
-## Data Carriers
-
+![Value Chain](Architecture-chain.png)
 
 
 

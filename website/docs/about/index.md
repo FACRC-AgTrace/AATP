@@ -11,8 +11,8 @@ Supporting farmers and food manufacturers with a free, open and scalable traceab
 
 ## Presentations & Videos
 
-- Short AATP Presentation [PDF](https://example.com/)
-- Video presentation (15 mins) [Youtube](https://example.com/)
+- Short AATP Presentation 
+- Video presentation (15 mins) 
 
 ## Incentives for sustainable supply chains are increasing
 
@@ -20,8 +20,7 @@ Incentives for sustainable supply chains are increasing fast.
 
 ## Verifiable sustainability evidence is critical
 
-## Challenges
+## But there are challenges facing implementation at scale
 
-## The United Nations Transparency Protocol (UNTP)
+## The Australian Agriculture Traceability Protocol
 
-The AATP ..
