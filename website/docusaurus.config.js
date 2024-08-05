@@ -15,12 +15,12 @@ const config = {
   url: 'https://gs-gs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/untp-extension/',
+  baseUrl: '/aatp/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'GoSource', // Usually your GitHub org/user name.
-  projectName: 'untp-extension', // Usually your repo name.
+  organizationName: 'AgTrace', // Usually your GitHub org/user name.
+  projectName: 'aatp', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/docs',
           editUrl: ({versionDocsDirPath, docPath}) =>
-            `https://github.com/gs-gs/untp-extension/edit/main/website/${versionDocsDirPath}/${docPath}`,
+            `https://github.com/gs-gs/aatp/edit/main/website/${versionDocsDirPath}/${docPath}`,
         },
         blog: false,
         theme: {
