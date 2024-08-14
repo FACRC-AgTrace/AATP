@@ -90,12 +90,19 @@ Allowed domains are `aatp-core`, `livestock`, `horticulture`, `grains`.  More do
 
 ## Development Tooling
 
+AATP has a complex set of dependencies, includes a rich set of versioned technical artifacts, and must follow a rigorous and collaborative development process. High qulity tooling is essential to support AATP governance.  The tooling includes
 
+* **Data Modeling** [Jargon](https://jargon.sh/user/aatp) data modeling tool provides business domain expert in AATP development working groups and teams with a tool for developing logical data models and vocabularies that requires relatively little technical expertise. Complex physical artefacts such as JSON schema, JSON-LD context files, and RDF vocabularies are all generated from the Jargon tool using built-in transformation rules. Jargon also provides an easy way to map AATP models to existing external vocabularies.
+* **Delivery Management** [GitHub](https://github.com/) is the worlds most popular open source development platform. It provides version controlled content management, project management, release workflows, and many more features.  It is at the heart of AATP governance. Jargon generated artifacts such as livestock passport schema are pushed to github and then gihub release workflows are used to publish the AATP artefacts.
+* **Publication** Modern digital standards including all data element definitions must be published to permanent, referencable and highly available web locations. The Amazon Cloud [S3 Service](https://aws.amazon.com/s3/) provides an effective and low cost solution which is also used by the UNTP.  Github workflows will automatically publish new releases to AATP test and/or production hosting locations.
+* **Implementation Support** requires a helpdesk management system (implemented using [Jira](https://www.atlassian.com/software/jira)) as well as a suite of references implementations and test services - which are built from open source code in Github and deployed to Amazon infrastructure. Feedback and experience from actual implementations provide valuable imput to close the loop back to the start for the next release of AATP.
+* **AATP Public Engagement** is achieved using a website that is generated from content management in Github and presented for easy navigation using [docusaurus](https://docusaurus.io/)
 
 ![Governance Tooling](Governance_tooling.png)
 
-## Imnplementation Conformity Scope
+This collection of tooling provides AATP with a low cost and highly effective mechanism for long term goverrnance.  
 
+## Imnplementation Conformity Scope
 
 
 ![Conformity Scope](Governance_implementation.png)
