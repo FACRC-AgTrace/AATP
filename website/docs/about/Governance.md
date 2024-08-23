@@ -18,22 +18,22 @@ The governance framework described on this page is designed to meet these criter
 
 ## Governance Structure
 
-The AATP is governed under the Australian Agricultural Traceability Governance Group ([AATTG](https://www.agriculture.gov.au/biosecurity-trade/market-access-trade/alliance-2022/australian-agricultural-traceability-governance-group)) within the Data Standards Working Group (DSWG). To ensure that AATG achieves it's purpose, formal liaison with other AATTG groups is required.
+The AATP is governed under the Australian Agricultural Traceability Governance Group ([AATTG](https://www.agriculture.gov.au/biosecurity-trade/market-access-trade/alliance-2022/australian-agricultural-traceability-governance-group)) within the Data Interoperability Governance Group (DIGG). To ensure that AATG achieves it's purpose, formal liaison with other AATTG groups is required.
 
 * The Strategic Reference Group (SRG) to ensure that AATP continues to meet expectations and aligns with overall AATTG strategy.
 * The Assuring Sustainability Claims Working Group (ASCWG) to ensure that AATP conformity claims and credentials meet integrity and conformance requirements.
 * The Research and Development Working Group (R&DWG) to ensure that AATP continues to apply best practice technical standards and norms.
 
-The AATP secretariat services, like the DSWG secretariat, are provided by the [Food Agility CRC](https://www.foodagility.com/). 
+The AATP secretariat services, like the DIGG secretariat, are provided by the [Food Agility CRC](https://www.foodagility.com/). 
 
 ![Structural Overview](Governance_organisation.png)
 
 The AATP recognises that different agricultural sectors will have different requirements for commodity specific data. The bovine characteristics of cattle are of course very different to the product characteristics of grain. Nevertheless there are many common core data elements that can be re-used by each sector. Accordingly AATP defines a common re-usable core (aatp-core) as well as sector specific credentials such as a digital livestock passport. Furthermore, it is important to facilitate agility for sector specific specifications as well as stability for core components. For this reason AATP is governed at two layers that work at different pace.
 
 * Sector specific teams with appropriate industry representation can develop and maintain their sector specific AATP extensions without constraint so long as the extensions apply the AATP extensions methodology and thereby retain cross-sector interoperability.
-* From time to time, new common cross-sector needs will be identified that will require an extension to the aatp core standards. These changes are governed by the DSWG and released less frequently.
+* From time to time, new common cross-sector needs will be identified that will require an extension to the aatp core standards. These changes are governed by the DIGG and released less frequently.
 
-Membership of the sector specific development teams is determined by the industry associations that are voting members of the sector specific stewards. The sector specific stewards are, in turn appointed by the DSWG under AATTG national rules.
+Membership of the sector specific development teams is determined by the industry associations that are voting members of the sector specific stewards. The sector specific stewards are, in turn appointed by the DIGG under AATTG national rules.
 
 Like any other working group, change is agreed by consensus. Ideally consensus is unanimous within a team but, when there are dissenting votes, a simple majority vote applies. 
 
