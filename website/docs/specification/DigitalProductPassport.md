@@ -17,7 +17,7 @@ The table lists each AATP product passport type and version as well as it's UNTP
 
 | Name | Current Version |Status| Release Date | UNTP dependency |
 | --- | ---- | ------ | --- | --- | 
-| [Digital Livestock Passport](digital-livestock-passport-dlp)|  0.4.0| Draft| 20-11-2024 |UNTP DPP v0.5.0|
+| [Digital Livestock Passport](#digital-livestock-passport-dlp)|  0.4.0| Draft| 20-11-2024 |UNTP DPP v0.5.0|
 | | | | | |
 
 ## Digital Livestock Passport (DLP)

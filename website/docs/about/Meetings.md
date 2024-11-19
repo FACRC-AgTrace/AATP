@@ -9,7 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Overview
 
-The AATP standard is maintained under a long term [governance arrangement](governance.md) that requires collaboration with industry representatives to make consensus-driven decisions about AATP maintenance. Meetings are held every 4 weeks commencing Wednesday 15th Jan 2025. Work in-between meetings is managed through the AATP group mailing list, the AATP chat channel, and the AATP GitHub issues register.  
+The AATP standard is maintained under a long term [governance arrangement](Governance.md) that requires collaboration with industry representatives to make consensus-driven decisions about AATP maintenance. Meetings are held every 4 weeks commencing Wednesday 15th Jan 2025. Work in-between meetings is managed through the AATP group mailing list, the AATP chat channel, and the AATP GitHub issues register.  
 
 To maximize transparency and trust, All meetings, group emails, group chats, and issues are publicly visible.
 
