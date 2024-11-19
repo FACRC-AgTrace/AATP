@@ -27,12 +27,12 @@ The diagram shows the different role types in a typical AATP implementation and 
 
 ## Implementation Conformity Process
 
-Implementers will follow a structured process to achieve and maintain AATP conformance - as indicated in the workflow diagram below and described in detail in the [implementation guidance](../tools-and-support) pages.
+Implementers will follow a structured process to achieve and maintain AATP conformance - as indicated in the workflow diagram below and described in detail in the [implementation guidance](../guidance) pages.
 
-* Once satisfied that there is a positive case for implementation (please refer to the [business case](../business-case) section of this website) then implementers are encouraged to publish their intent to implement the AATP following the process outlined in the [implementation register](../implementations).
-* Once an implementation has completed build and has passed [conformity testing](../tools-and-support/TestService.md) then the implementer should update their entry on the AATP implementers register accordingly. At this point the maintenance life-cycle commences which includes
+* Once satisfied that there is a positive case for implementation (please refer to the [business case](../business-case) section of this website) then implementers are encouraged to publish their intent to implement the AATP following the process outlined in the [implementation register](../register).
+* Once an implementation has completed build and has passed conformity testing then the implementer should update their entry on the AATP implementers register accordingly. At this point the maintenance life-cycle commences which includes
   * Re-testing and updating the implementation register when either the implementer software product major version or supported AATP credential major/minor version changes.
-  * providing simple high-level and de-personalised quarterly reports to the AATP secretariat against KPIs defined in the [value assessment](../business-case/ValueAssessment.md) page. 
+  * providing simple high-level and de-personalised quarterly reports to the AATP secretariat against KPIs. 
 
 ![Conformity Process](Governance_conformity.png)
 

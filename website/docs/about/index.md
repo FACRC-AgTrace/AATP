@@ -33,7 +33,7 @@ This AATP website is designed to take potential AATP implementers through a jour
 * **[Business Case](../business-case)** describes the value proposition for each stakeholder type and provides templates to assist sustainability managers with the development of a business case for implementation. It answers the question "Why should I implement AATP?".
 * **[Specification](../specification)** documents the AATP technical specifications as UNTP extensions and is targeted at the technical staff who will integrate systems to conform to AATP. 
 * **[Guidance](../guidance)** Describes the sequence of implementation activities and includes specific rules for each agriculture sector (livestock, horticulture, grains). It answers the question "How do I implement AATP?".
-* **[Register](register)** Provides a list of implementers that have either committed to AATP or have completed and tested their AATP implementation.  It answers the question "Who is implementing AATP?".
+* **[Register](../register)** Provides a list of implementers that have either committed to AATP or have completed and tested their AATP implementation.  It answers the question "Who is implementing AATP?".
 
 
 
