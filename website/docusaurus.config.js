@@ -76,21 +76,16 @@ const config = {
         items: [
           {to: '/docs/about', label: 'About the AATP', position: 'right'},
           {
-            to: '/docs/industry-processes',
-            label: 'Industry processes',
-            position: 'right',
-          },
-          {
             to: '/docs/specification',
             label: 'The specification',
             position: 'right',
           },
           {
-            to: '/docs/tools-and-support',
-            label: 'Implementation support',
+            to: '/docs/guidance',
+            label: 'Guidance',
             position: 'right',
           },
-          {to: '/docs/implementations', label: 'Register', position: 'right'},
+          {to: '/docs/register', label: 'Register', position: 'right'},
           {
             href: 'https://join.slack.com/t/aatpworkspace/shared_invite/zt-2nyb02frq-IjQUy5MIOZQehSNDktScEA',
             position: 'right',

@@ -1,6 +1,6 @@
 ---
-sidebar_position: 5
-title: For Industry
+sidebar_position: 7
+title: Guidance
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
@@ -37,4 +37,3 @@ Put a workflow diagram here - with decision points.
 
 
 ### Ongoing value assessment
-
