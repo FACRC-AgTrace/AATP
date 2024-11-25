@@ -89,7 +89,15 @@ Property Identification Codes (PIC) are issued by each Australian state or terri
 
 ## Australian Business Number (ABN)
 
-The Australian Business Number (ABN) is the identity key for all business entities from individual sole traders to corporate entities. There are approximately 2 million registered business entities in a publicly searchable Australian Business Register (ABR) and each entity is resolvable via a simple URL. The returned data set of a given business is HTML and does not conform to any standard vocabulary. At this time, the ABR does not provide digitally verifiable evidence of registration. 
+The Australian Business Number (ABN) is the identity key for all business entities from individual sole traders to corporate entities. There are approximately 2 million registered business entities in a publicly searchable Australian Business Register (ABR) and each entity is resolvable via a simple URL. Only default data is returned since there is no link resolver implemented that would allow users to request different link types. The returned default data set of a given business is HTML and does not conform to any standard vocabulary. At this time, the ABR does not provide digitally verifiable evidence of registration. 
+
+### Digital Identity Readiness
+
+* Discoverable : Yes
+* Resolvable : Partial
+* Verifiable No
+
+### Scheme Metadata
 
 |`IdentifierScheme` Property name|Property value|
 |--|--|
@@ -98,11 +106,39 @@ The Australian Business Number (ABN) is the identity key for all business entiti
 |`landingPage`|https://abr.business.gov.au|
 |`registerType`|Organisation|
 |`jurisdiction`|AU|
-|`resolverTemplate`|https://abr.business.gov.au/ABN/View?abn={id}|
-|`supportedLinkTypes`|Link resolver not yet implemented|
-|`supportedVocabularies`|Custom vocabulary|
-|`registrar.id`|registrar DIDs not yet available|
+|`memberIdTemplate`|https://abr.business.gov.au/ABN/View?abn={id}||
+|`resolverTemplate`|None|
+|`supportedLinkTypes`|None|
+|`supportedVocabularies`|None|
+|`registrar.id`|None|
 
 ## GS1 Global Trade Identification Numbers (GTIN)
 
-GTINs, SGTINs, etc
+Global Trade Item Number (GTIN) can be used by a company to uniquely identify all of its trade items. GS1 defines trade items as products or services that are priced, ordered or invoiced at any point in the supply chain.  GTINs can identify products at class level (product type), batch level (specific batch of a given product type) or individually serialised item level.  
+
+As a traceability architecture, the AATP requires GS1 identifiers at batch or serialised item level. Current practice in the food industry is to manage traceability at batch level and therefore we define the usage of GS1 identifiers as globally resolvable product batches. 
+
+### Digital Identity Readiness
+
+* Discoverable : Yes
+* Resolvable : Yes
+* Verifiable No
+
+### Scheme Metadata
+
+Note that the resolver template 
+
+|`IdentifierScheme` Property name|Property value|
+|--|--|
+|`id`|hhttps://id.gs1.org/01/|
+|`name`|GS1 Global Trade Identification Number (GTIN)|
+|`landingPage`|https://www.gs1.org/standards/id-keys/gtin|
+|`registerType`|Product|
+|`jurisdiction`|Global|
+|`rmemberIdTemplate`|`https://id.gs1.org/01/{id}/10/{batch}`|
+|`resolverTemplate`|TBD|
+|`supportedLinkTypes`|https://ref.gs1.org/voc/?show=linktypes|
+|`supportedVocabularies`|https://ref.gs1.org/voc/data/gs1Voc.jsonld|
+|`registrar.id`|registrar DIDs not yet available|
+
+
