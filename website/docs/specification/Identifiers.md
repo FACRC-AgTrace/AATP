@@ -135,10 +135,19 @@ Note that the resolver template
 |`landingPage`|https://www.gs1.org/standards/id-keys/gtin|
 |`registerType`|Product|
 |`jurisdiction`|Global|
-|`rmemberIdTemplate`|`https://id.gs1.org/01/{id}/10/{batch}`|
-|`resolverTemplate`|TBD|
+|`memberIdTemplate`|`https://id.gs1.org/01/{id}/10/{batch}`|
+|`resolverTemplate`|`https://id.gs1.org/01/{id}/10/{batch}` or `https://id.gs1.org/01/{id}`|
 |`supportedLinkTypes`|https://ref.gs1.org/voc/?show=linktypes|
 |`supportedVocabularies`|https://ref.gs1.org/voc/data/gs1Voc.jsonld|
 |`registrar.id`|registrar DIDs not yet available|
+
+
+Note that the Global GS1 identity resolver does not maintain data at batch level, only at GTIN level. When presented with a batch request like `https://id.gs1.org/01/09520123456788/10/ABC123`, the resolver will return available link type for the GTIN (09520123456788) which should include a link type https://ref.gs1.org/voc/serviceInfo which provides a redirection URL to a second link resolver operated by the product manufacturer. Therefore the workflow to retrieve a DPP at batch level is
+
+* Parse the barcode to get the GTIN and batch.  
+* Construct a resolver request using the resolver template `https://id.gs1.org/01/{id}/10/{batch}`
+* Find the `https://ref.gs1.org/voc/serviceInfo` link type and follow the link to the manufacturer's resolver
+* Follow the `https://ref.gs1.org/voc/sustainabilityInfo` link type returned from the manufacturers resolver to get the Digital Product Passport.
+
 
 
