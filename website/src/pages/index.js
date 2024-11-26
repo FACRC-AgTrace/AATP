@@ -32,7 +32,7 @@ function HomepageHero() {
 export default function Home() {
   return (
     <Layout
-      title="UN Transparency Protocol"
+      title="Australian Agriculture Traceability Protocol"
       description="Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.">
       <main className="homepage-content">
         <HomepageHero/>
