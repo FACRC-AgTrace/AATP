@@ -18,7 +18,9 @@ The table lists each AATP product passport type and version as well as it's UNTP
 | Name | Current Version |Status| Release Date | UNTP dependency |
 | --- | ---- | ------ | --- | --- | 
 | [Digital Livestock Passport](#digital-livestock-passport-dlp)|  0.4.0| Draft| 20-11-2024 |UNTP DPP v0.5.0|
-| | | | | |
+| [Processed Meat Passport](#processed-meat-passport)|  0.4.0| Draft| 20-11-2024 |UNTP DPP v0.5.0|
+| [Horticulture Passport](#digital-horticulture-passport)|  0.4.0| Draft| 20-11-2024 |UNTP DPP v0.5.0|
+| [Grains Passport](#digital-grains-passport)|  0.4.0| Draft| 20-11-2024 |UNTP DPP v0.5.0|
 
 ## Digital Livestock Passport (DLP)
 
@@ -57,6 +59,10 @@ The following technical artifacts are for use by DLP implementers.
 ### Working Sample
 
 An issued Digital Livestock Passport Verifiable Credential (link TBD)
+
+## Processed Meat Passport
+
+TBD
 
 ## Digital Horticulture Passport
 

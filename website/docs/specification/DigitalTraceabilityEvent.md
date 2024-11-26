@@ -16,7 +16,7 @@ The table lists each AATP traceability event type and version as well as it's UN
 | Name | Current Version |Status| Release Date | UNTP dependency |
 | --- | ---- | ------ | --- | --- | 
 | [Animal Processing Event](#animal-processing-event)|  0.4.0| Draft| 20-11-2024 |UNTP DTE v0.5.0|
-| | | | | |
+| [Animal Feeding Event](#animal-feeding-event)|  0.4.0| Draft| 20-11-2024 |UNTP DTE v0.5.0|
 
 ### Logical Model
 
@@ -43,9 +43,11 @@ The AATP Animal Processing Event represents the processing of a batch of animals
 * `TransformationEvent.actionCode` MUST be set to `add`, `TransformationEvent.bizStepCode` MUST be set to `cbv:BizStep-commissioning`, and `TransformationEvent.bizStepCode` MUST be set to `cbv:Disp-active`
 
 
-
 ### Working Sample
 
 An issued AATP Animal Processing Event (link TBD)
 
-##
+## Animal Feeding Event
+
+The AATP Animal Feeding Event represents the feedlot process and records the association of a grain supply with an animal.  it uses the `association` event because the input and output animal identifier remains unchanged.  The feeding event simply connects an identified consignment of grain to the animal. When a specific consignment cannot be linked to a specific animal then feedlots should list all consignments that may have been fed to the animal.
+

@@ -13,7 +13,7 @@ The table lists each AATP conformity credential type and version as well as it's
 
 | Name | Current Version |Status| Release Date | UNTP dependency |
 | --- | ---- | ------ | --- | --- | 
-| [Deforestation Credential](#digital-livestock-passport-dlp)|  0.4.0| Draft| 20-11-2024 |UNTP DPP v0.5.0|
+| [Deforestation Credential](#deforestation-credential)|  0.4.0| Draft| 20-11-2024 |UNTP DPP v0.5.0|
 | | | | | |
 
 ## Deforestation Credential
@@ -31,7 +31,7 @@ The Deforestation Credential leverages the [UNTP Digital Conformity Credential](
 * `ConformityAssessment.assessedOrganisation` SHOULD be included and refernece the farm owner or operator using the [ABN identity scheme](Identifiers#australian-business-number-abn)
 * `ConformityAttestation.authorisation` SHOULD be included and reference (via `Endorsement.issuingAuthority` an accreditation trust anchor in the `.gov.au` domain.
 * `ConformityAttestation.auditableEvidence` (eg satellite imagery) that informed the assessment SHOULD be included and MAY be encrypted via the `untp.SecureLink` object.
-* `Claim.assessmentCriteria` MUST be drawn from the allowed vocabularies for deforestation criteria.
+* `Claim.assessmentCriteria` MUST be drawn from the allowed [vocabularies](vocabularies) for deforestation criteria.
 
 
 ### Technical Artefacts

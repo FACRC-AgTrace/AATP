@@ -56,7 +56,39 @@ The [NLIS Tech Tips](https://www.nlis.com.au/NLISDocuments/Cattle%20device%20num
 |`resolverTemplate`|Mapping service from RFID tag ID to NLIS ID not yet implemented|
 |`supportedLinkTypes`|Link resolver not yet implemented|
 |`supportedVocabularies`|Linked Data not yet implemented|
-|`registrar.id`|registrar DIDs not yet available|
+|`registrar.id`|None yet but should be a DID in the registrar domain such as `did:web:nlis.com.au:pic-anchor`|
+
+### Identity Anchor Credential
+
+The NLIS registrar SHOULD issue identity credentials to members that link the member DID to their NLIS registered PICs. In this way the NLIS register can act as a trust anchor even if state PIC registers do not provide similar credentials. 
+
+The NLIS register SHOULD implement the UNTP [Digital Identity Anchor](https://uncefact.github.io/spec-untp/docs/specification/DigitalIdentityAnchor) standard as a trust anchor for farm PICs.  One DIA should be issued for each registered account (identified by an MLA ID) and should list all registered PIC URIs in the `registrationScopeList` property - as shown in the sample below.
+
+```json
+  "issuer":{
+  	 "id":"did:web:nlis.com.au:pic-anchor"
+  }
+  "credentialSubject": {
+    "type": [
+      "RegisteredIdentity",
+      "Identifier"
+    ],
+    "id": "did:web:samplefarm.com.au:my-farm",
+    "name": "Sample farm",
+    "registeredId": "myMLAID",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://nlis.com.au",
+      "name": "National Livestock Identification System (NLIS)"
+    },
+    "registerType": "Facility",
+    "registrationScopeList": [
+        "https://daf.qld.gov.au/pic/QDBH0132"
+    ]
+  }
+```
 
 ## Property Identification Codes (PIC)
 
@@ -87,6 +119,33 @@ Property Identification Codes (PIC) are issued by each Australian state or terri
 |VIC|`https://pic.agriculture.vic.gov.au/`| `https://pic.agriculture.vic.gov.au/{id}` eg `https://pic.agriculture.vic.gov.au/3CPWG015` |
 |WA|`https://agric.wa.gov.au/pic` | `https://agric.wa.gov.au/pic/{id}` `https://agric.wa.gov.au/pic/WFBY0691`|
 
+### Identity Anchor Credential
+
+Each state registrar SHOULD issue identity credentials to members that link the member DID to their registered PICs following the UNTP [Digital Identity Anchor](https://uncefact.github.io/spec-untp/docs/specification/DigitalIdentityAnchor) standard as a trust anchor for farm PICs.  One DIA should be issued for each registered PIC as per the example below.
+
+```json
+  "issuer":{
+  	 "id":"did:web:daf.qld.gov.au:pic-register"
+  }
+  "credentialSubject": {
+    "type": [
+      "RegisteredIdentity",
+      "Identifier"
+    ],
+    "id": "did:web:samplefarm.com.au:my-farm",
+    "name": "Sample farm",
+    "registeredId": "QDBH0132",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://daf.qld.gov.au/pic",
+      "name": "Queensland PIC register"
+    },
+    "registerType": "Facility",
+  }
+```
+
 ## Australian Business Number (ABN)
 
 The Australian Business Number (ABN) is the identity key for all business entities from individual sole traders to corporate entities. There are approximately 2 million registered business entities in a publicly searchable Australian Business Register (ABR) and each entity is resolvable via a simple URL. Only default data is returned since there is no link resolver implemented that would allow users to request different link types. The returned default data set of a given business is HTML and does not conform to any standard vocabulary. At this time, the ABR does not provide digitally verifiable evidence of registration. 
@@ -106,11 +165,43 @@ The Australian Business Number (ABN) is the identity key for all business entiti
 |`landingPage`|https://abr.business.gov.au|
 |`registerType`|Organisation|
 |`jurisdiction`|AU|
-|`memberIdTemplate`|https://abr.business.gov.au/ABN/View?abn={id}||
-|`resolverTemplate`|None|
+|`memberIdTemplate`|https://abr.business.gov.au/{id}|
+|`resolverTemplate`|https://abr.business.gov.au/ABN/View?abn={id}|
 |`supportedLinkTypes`|None|
 |`supportedVocabularies`|None|
-|`registrar.id`|None|
+|`registrar.id`|None yet but should be a DID in the registrar domain such as `did:web:abr.business.gov.au:abn-anchor`|
+
+Note that the resolver template will yeild a response that is not conformant with [ISO/IEC 18975](https://www.iso.org/standard/85540.html) and does not return an [IETF-9264](https://datatracker.ietf.org/doc/rfc9264/) linkset. UNTP conforming [identifier resolver schemes](https://uncefact.github.io/spec-untp/docs/specification/IdentityResolver) MUST comply with both these standards  Therefore the ABN is considered "partially" resolvable.  
+
+### Identity Anchor Credential
+
+The Australian Business Register SHOULD issue identity credentials to members that link the member DID to their registered ABNs following the UNTP [Digital Identity Anchor](https://uncefact.github.io/spec-untp/docs/specification/DigitalIdentityAnchor) standard as a trust anchor for participating Australian Businesses.  One DIA should be issued for each registered ABN as per the example below. The `registrationScopeList` should be used to represent the registered entity type as per the [ABR Entity Type](https://abr.business.gov.au/Help/EntityTypeList) list.
+
+```json
+  "issuer":{
+  	 "id":"did:web:abr.business.gov.au:abn-anchor"
+  }
+  "credentialSubject": {
+    "type": [
+      "RegisteredIdentity",
+      "Identifier"
+    ],
+    "id": "did:web:samplebusiness.com.au:my-business",
+    "name": "Sample Business",
+    "registeredId": "90664869327",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://abr.business.gov.au",
+      "name": "Australian Business Register"
+    },
+    "registerType": "Organisation",
+    "registrationScopeList": [
+        "https://abr.business.gov.au/Help/EntityTypeDescription?Id=00019"
+    ]
+  }
+```
 
 ## GS1 Global Trade Identification Numbers (GTIN)
 
@@ -130,7 +221,7 @@ Note that the resolver template
 
 |`IdentifierScheme` Property name|Property value|
 |--|--|
-|`id`|hhttps://id.gs1.org/01/|
+|`id`|https://id.gs1.org/01/|
 |`name`|GS1 Global Trade Identification Number (GTIN)|
 |`landingPage`|https://www.gs1.org/standards/id-keys/gtin|
 |`registerType`|Product|
@@ -149,5 +240,33 @@ Note that the Global GS1 identity resolver does not maintain data at batch level
 * Find the `https://ref.gs1.org/voc/serviceInfo` link type and follow the link to the manufacturer's resolver
 * Follow the `https://ref.gs1.org/voc/sustainabilityInfo` link type returned from the manufacturers resolver to get the Digital Product Passport.
 
+### Identity Anchor Credential
 
+The GS1 Global Register SHOULD issue identity credentials to members that link the member DID to their registered GS1 Customer prefix following the UNTP [Digital Identity Anchor](https://uncefact.github.io/spec-untp/docs/specification/DigitalIdentityAnchor) standard as a trust anchor for participating Australian Businesses.  One DIA should be issued for each registered GS1 license key (ie GTIN prefix) as per the example below. The `registrationScopeList` MAY be used to represent any GLNs registered to the same license key. 
+
+```json
+  "issuer":{
+  	 "id":"did:web:gs1.org:identity-anchor"
+  }
+  "credentialSubject": {
+    "type": [
+      "RegisteredIdentity",
+      "Identifier"
+    ],
+    "id": "did:web:samplebusiness.com.au:my-business",
+    "name": "Sample Business",
+    "registeredId": "95060001404",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org/01/",
+      "name": "GS1 Global Trade Identification Number"
+    },
+    "registerType": "Product",
+    "registrationScopeList": [
+        "https://id.gs1.org/414/9506248700180"
+    ]
+  }
+```
 
