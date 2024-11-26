@@ -50,8 +50,8 @@ Browse the [classes, properties, and code-lists used in the DLP](https://jargon.
 
 The following technical artifacts are for use by DLP implementers.
 
-* [JSON Schema](https://jargon.sh/user/aatp/DigitalLivestockPassport/v/0.4.0/artefacts/jsonSchemas/DigitalLivestockPassport.json?class=DigitalLivestockPassport)
-* [JSON-LD @context file](https://jargon.sh/user/aatp/DigitalLivestockPassport/v/0.4.0/artefacts/jsonldContexts/DigitalLivestockPassport.jsonld?class=DigitalLivestockPassport)
+* [JSON Schema](../../schema/aatp-dlp-schema-0.4.0.json)
+* [JSON-LD @context file](../../schema/aatp-dlp-context-0.4.0.jsonld)
 * [JSON sample instance](https://jargon.sh/user/aatp/DigitalLivestockPassport/v/0.4.0/artefacts/jsonSchemas/DigitalLivestockPassport_instance.json?class=DigitalLivestockPassport_instance)
 
 ### Working Sample
