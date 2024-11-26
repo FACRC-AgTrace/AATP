@@ -89,6 +89,9 @@ The NLIS register SHOULD implement the UNTP [Digital Identity Anchor](https://un
     ]
   }
 ```
+### Working Sample
+
+An [AATP Dgital Identity Anchor (NLIS)](https://idr.aatp.showthething.com/nlis/01/QBIX0987XBS01234)
 
 ## Property Identification Codes (PIC)
 
@@ -146,6 +149,10 @@ Each state registrar SHOULD issue identity credentials to members that link the 
   }
 ```
 
+### Working Sample
+
+An [AATP Dgital Identity Anchor (PIC)](https://idr.aatp.showthething.com/dpird/pic/QBIX0987?linkType=dpird:registryEntry)
+
 ## Australian Business Number (ABN)
 
 The Australian Business Number (ABN) is the identity key for all business entities from individual sole traders to corporate entities. There are approximately 2 million registered business entities in a publicly searchable Australian Business Register (ABR) and each entity is resolvable via a simple URL. Only default data is returned since there is no link resolver implemented that would allow users to request different link types. The returned default data set of a given business is HTML and does not conform to any standard vocabulary. At this time, the ABR does not provide digitally verifiable evidence of registration. 
@@ -202,6 +209,10 @@ The Australian Business Register SHOULD issue identity credentials to members th
     ]
   }
 ```
+
+### Working Sample
+
+An [AATP Dgital Identity Anchor (ABN)](https://idr.aatp.showthething.com/ato/abn/87654321012?linkType=ato:registryEntry)
 
 ## GS1 Global Trade Identification Numbers (GTIN)
 
@@ -269,4 +280,9 @@ The GS1 Global Register SHOULD issue identity credentials to members that link t
     ]
   }
 ```
+
+### Working Sample
+
+An [AATP Dgital Identity Anchor (GLN)](https://idr.aatp.showthething.com/gs1/gln/0293456789012?linkType=gs1:registryEntry)
+
 

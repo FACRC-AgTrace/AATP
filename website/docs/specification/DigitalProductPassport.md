@@ -58,7 +58,8 @@ The following technical artifacts are for use by DLP implementers.
 
 ### Working Sample
 
-An issued Digital Livestock Passport Verifiable Credential (link TBD)
+An issued [Digital Livestock Passport Verifiable Credential](https://idr.aatp.showthething.com/nlis/01/QDBH0132XBS01234)
+
 
 ## Processed Meat Passport
 

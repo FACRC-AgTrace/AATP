@@ -40,7 +40,7 @@ Implementers must use the [UNTP DCC Technical Artefacts](https://test.uncefact.o
 
 ### Working Sample
 
-An issued AATP Deforestation Credential (link TBD)
+An issued [AATP Deforestation Credential](https://idr.aatp.showthething.com/dpird/pic/QBIX0987/?linkType=dpird:certificationInfo)
 
 ## Emissions Intensity Credential
 
