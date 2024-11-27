@@ -58,7 +58,9 @@ The following technical artifacts are for use by DLP implementers.
 
 ### Working Sample
 
-An issued [Digital Livestock Passport Verifiable Credential](https://idr.aatp.showthething.com/nlis/01/QDBH0132XBS01234)
+|Clickable Link|Scan the QR|Comments|
+|--|--|--|
+|[Digital Livestock Passport Verifiable Credential](https://idr.aatp.showthething.com/nlis/01/QDBH0132XBS01234)|![Digital Livestock Passport Verifiable Credential](aatp-livestock-passport.png)|Sample grass fed angus DLP. Click on the JSON tab to see the underling AATP data. Download the siagend credential to test verification in your own system|
 
 
 ## Processed Meat Passport

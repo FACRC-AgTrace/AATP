@@ -40,7 +40,10 @@ Implementers must use the [UNTP DCC Technical Artefacts](https://test.uncefact.o
 
 ### Working Sample
 
-An issued [AATP Deforestation Credential](https://idr.aatp.showthething.com/dpird/pic/QBIX0987/?linkType=dpird:certificationInfo)
+|Clickable Link|Scan the QR|Comments|
+|--|--|--|
+|[Deforestation Conformity Credential](https://idr.aatp.showthething.com/dpird/pic/QBIX0987/?linkType=dpird:certificationInfo)|![Deforestation Conformity Credential](aatp-deforestation-credential.png)|Sample EUDR conformity credential. Click on the JSON tab to see the underling AATP data. Download the siagend credential to test verification in your own system|
+
 
 ## Emissions Intensity Credential
 

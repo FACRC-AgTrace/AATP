@@ -16,6 +16,10 @@ A high quality governance framework provides implementers with confidence that A
 
 The governance framework described on this page is designed to meet these criteria.  
 
+## Licensing
+
+As required by [UNTP Extensions Governance](https://uncefact.github.io/spec-untp/docs/extensions/ExtensionsMethodology#extension-governance) the AATP is made available under the [Creative Commons 1.0 Universal license](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1).  This means that it is free to use and can be modified and extended for any purpose. 
+
 ## Governance Structure
 
 The AATP is governed under the Australian Agricultural Traceability Governance Group ([AATTG](https://www.agriculture.gov.au/biosecurity-trade/market-access-trade/alliance-2022/australian-agricultural-traceability-governance-group)) within the Data Interoperability Governance Group (DIGG). To ensure that AATG achieves it's purpose, formal liaison with other AATTG groups is required.

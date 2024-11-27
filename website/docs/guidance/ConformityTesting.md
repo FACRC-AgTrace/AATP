@@ -7,6 +7,36 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
+## Testing Services
+
+TO facilitate easy adoption and simple conformity self-assessments, AATP provides;
+
+* Some sample AATP credentials so that you can see what you should be creating or drop them into your oven verifier.
+* A reference implementaiton where you can manually enter data to create AATP comforming credentials
+* A test playground where you can drop credentials created from your system to test conformance with AATP. 
+
+### Sample Credentials
+
+Please refer to the relevant specification page - for example [Livestock Passport Sample](http://localhost:3000/aatp/docs/specification/DigitalProductPassport#working-sample).  Using the working sample, you can
+
+* See the human rendered version - and copy the rendering template embedded into the credential and modify it for your own use.
+* See the structured data by clicking the JSON tab
+* Download the full JWT/JOSE signed credential from the download tab and test it in your own verifier.  
+
+### Reference Implementation
+
+The AATP reference implemntation can be used as a place to create test credentials or as open source code that you can embed into your application.  
+
+* The online reference applicaiton is hosted at [AATP Reference App](https://aatp.showthething.com/).
+* Supporting Documentation is available from [UNTP test suite](https://uncefact.github.io/tests-untp/).
+* Freely available (GPL 3.0) code is available from the test suite site and also from the [UN VCkit repository](https://github.com/uncefact/project-vckit)
+
+### AATP Playground
+
+The AATP playground is an online hosted version of the test suite. Once you have built your early AATP implementation, drop your generated credentials into the playground service to test confomance with the specification and get hints about what to fix.  
+
+Note - the AATP playground complete with AATP specific profile validation is under construction.  In the meantime, use the [UNTP Playground](https://test.uncefact.org/untp-playground)
+
 ## Implementation Conformity Scope
 
 Governance applies not only to the development of AATP itself but also to the ecosystem of AATP implementers. A Livestock passport issued from a farm system should be discoverable and readable by a processor system without any specific system to system testing. To achieve such interoperability, AATP must provide a comprehensive conformity testing service that can provide confidence that, once any system has successfully completed testing, it will produce artifacts that are interoperable with any other system. 
@@ -36,9 +66,6 @@ Implementers will follow a structured process to achieve and maintain AATP confo
 
 ![Conformity Process](Governance_conformity.png)
 
-
-
-## Testing Overview
 
 
 

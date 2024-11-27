@@ -9,13 +9,21 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Overview
 
-Web **vocabularies** are a means to bring consistent understanding of **meaning** to ESG claims and assessments throughout transparent value chains based on UNTP. There are hundreds of ESG standards and regulations around the world, each with dozens or hundreds of specific conformity **criteria**. Any given value chain from raw materials to finished product is likely to include dozens of passports and conformity credentials issued against any of thousands of ESG criteria. Without a consistent means to make sense of this data, UNTP would provide a means to discover a lot of data but no easy way to make sense of it. The UNTP defines a standard and extensible topic map (taxonomy) of ESG criteria and provides a mechanism for any standards authority, or national regulator, or industry association to map their specific terminology to the UNTP vocabulary.
-
-## AASB Corporate Disclosures
+Web **vocabularies** are a means to bring consistent understanding of **meaning** to ESG claims and assessments throughout transparent value chains based on AATP. There are many ESG standards and regulations in Australia and around the world, each with multiple specific conformity **criteria**. This page provides guidance on the specific standards, regulations, and conformity criteria that may be referenced by product passports and conformity credentials issued by AATP implementers. 
 
 
-## Livestock Vocabularies
+## Sustainability Vocabulary Catalog
 
-## Horticulture Vocabularies
+* Conformity Topic is drawn from the 15 [UNTP Topics](https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode).  Currently only `emissions`, `deforestation`, and `compliance` topics are mapped to any AATP references.
+* Metric is the name to be used in AATP product passport and conformity credential `metricName` property.
+* Commodity is either `Livestock`, `Hort`, `Grain`, or `Any`
+* Type is either `standard` or `regulation`
+* Reference contains the standard or regulation `name` and hyperlink to the `id`
+* Criteria contains a list of one or more relevant criterion `name` and hyperlinked `id` that define the rules for calculating the `Metric`
 
-## Grains Vocabularies
+|Topic|Metric|Commodity|Type|Reference|Criteria |
+|--|--|--|--|--|--|
+|emissions|`Net Farm Emissions` `Emissions Intensity`|Livestock|Standard |[PICCC](https://piccc.org.au/resources/Tools) |[SheepAndBeef](https://piccc.org.au/Files/Tools/SB-GAFv2.5_Seasonal.xlsx), [Feedlot](https://piccc.org.au/Files/Tools/FeedlotbeefGreenhouseV4.2.xlsx)|
+|deforestation|`LandArea` `AssessedPeriod` `deforestation-free`|All|regulation|[EUDR](https://eur-lex.europa.eu/eli/reg/2023/1115) |[Article 2 Definitions](https://eur-lex.europa.eu/eli/reg/2023/1115#Article2) [Article 3 Prohibition](https://eur-lex.europa.eu/eli/reg/2023/1115/Article#3)|
+|compliance|`export-accreditation`|Livestock|Regulation|[Export Control Act](https://www.legislation.gov.au/C2020A00012/latest/text)| [Approved Arrangements](https://www.legislation.gov.au/C2020A00012/2024-10-14/2024-10-14/text/original/epub/OEBPS/document_1/document_1.html#_Toc176867436)|
+
