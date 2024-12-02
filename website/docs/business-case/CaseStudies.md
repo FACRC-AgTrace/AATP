@@ -12,7 +12,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 |Case Study|Date|Summary|
 |--|--|--|
 |[AgTrace Proof of Concept - Livestock, EU Deforestation](#aatp--agtrace-poc---livestock-eu-deforestation)|Aug-Dec 2023|Verified technical feasibility and ease of implementation of a decentralised verifiable linked-data traceability architecture|
-|[AATP / Regen Farmers PoC - Livestock, Emissions](#aatp--regen-farmers-poc---livestock-emissions |Jan-Apr 2024  | Verified the feasibility of allocating farm level emissions data to mob or animal level consignments to help meet corporate sustainability goals and disclosures of major buyers.|
+|[AATP / Regen Farmers PoC - Livestock, Emissions](#aatp--regen-farmers-poc---livestock-emissions) |Jan-Apr 2024  | Verified the feasibility of allocating farm level emissions data to mob or animal level consignments to help meet corporate sustainability goals and disclosures of major buyers.|
 |[AATP / Agtrace PoC - Horticulture, China exports](#aatp--agtrace-poc---horticulture-china-exports)|Mar-Aug 2024 |Verified the technical feasibility of the use of traceability to inform and automate export market regulatory compliance|
 |[AATP / De Bortoli PoC - Wine exports, dynamic labeling](#aatp--de-bortoli-poc---wine-exports-dynamic-labeling)|May-Aug 2024|Verified the value of dynamic linked data discovery to meet complex and varies export market compliance and labelling requirements|
 |[AATP / AgTrace PoC - Grains ](#aatp--agtrace-poc---grains)|Due Jan-May 2025|Will confirm an open and collaborative governance framework for AATP and prove feasibility of managing mass-balance based mixed bulk-commodity consignments|
