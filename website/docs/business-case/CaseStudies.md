@@ -9,11 +9,13 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Summary
 
-|Case Study|Date|Implementers|Summary|
-|--|--|--|--|
-|[AgTrace Proof of Concept - Livestock, EU Deforestation](#agtrace-proof-of-concept---livestock-eu-deforestation)|Dec 2023|[Trust Provenance](../register/Software#cibo-labs)|Verified technical feasibility and ease of implementation of a decentralised verifiable linked-data traceability architecture|
-|[Regen Farmers Proof of Concept - Livestock, AU Emissions](#regen-farmers-proof-of-concept---livestock-au-emissions) |Mar 2024 |[Regen Farmers Mutual](https://www.regenfarmersmutual.com/) | Verified the feasibility of allocating farm level emissions data to mob or animal level consignments to help meet corporate sustainability goals and disclosures of major buyers.|
-|[gTrace Proof of Concept - Horticulture, China exports](#agtrace-proof-of-concept---horticulture-china-exports)|Aug 2024 |[FreshChain](../register/Software#freshchain), [Source Certain](https://www.sourcecertain.com/) |Verified the technical feasibility of the use of traceability to inform and automate export market regulatory compliance|
+|Case Study|Date|Summary|
+|--|--|--|
+|[AgTrace Proof of Concept - Livestock, EU Deforestation](#aatp--agtrace-poc---livestock-eu-deforestation)|Aug-Dec 2023|Verified technical feasibility and ease of implementation of a decentralised verifiable linked-data traceability architecture|
+|[AATP / Regen Farmers PoC - Livestock, Emissions](#aatp--regen-farmers-poc---livestock-emissions |Jan-Apr 2024  | Verified the feasibility of allocating farm level emissions data to mob or animal level consignments to help meet corporate sustainability goals and disclosures of major buyers.|
+|[AATP / Agtrace PoC - Horticulture, China exports](#aatp--agtrace-poc---horticulture-china-exports)|Mar-Aug 2024 |Verified the technical feasibility of the use of traceability to inform and automate export market regulatory compliance|
+|[AATP / De Bortoli PoC - Wine exports, dynamic labeling](#aatp--de-bortoli-poc---wine-exports-dynamic-labeling)|May-Aug 2024|Verified the value of dynamic linked data discovery to meet complex and varies export market compliance and labelling requirements|
+|[AATP / AgTrace PoC - Grains ](#aatp--agtrace-poc---grains)|Due Jan-May 2025|Will confirm an open and collaborative governance framework for AATP and prove feasibility of managing mass-balance based mixed bulk-commodity consignments|
 
 
 ### AATP / AgTrace PoC - Livestock, EU Deforestation
@@ -60,7 +62,7 @@ De Bortoli exports wines all over the world and faces increasingly complex compl
 In short, this PoC delivered a valuable open source tool-set to complement the existing UN tools for credential issuing - and proved the value of the AATP linked data architecture to exporters that face diverse and dynamic export market conditions.
 
 
-### AATP / AgTrace PoC - Grains, 
+### AATP / AgTrace PoC - Grains 
 
 The Grains proof of concept will run from January 2025 and will focus on verifying
 
