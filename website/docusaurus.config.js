@@ -12,15 +12,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://gs-gs.github.io',
+  url: 'https://FACRC-AgTrace.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/aatp/',
+  baseUrl: '/AATP/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'AgTrace', // Usually your GitHub org/user name.
-  projectName: 'aatp', // Usually your repo name.
+  projectName: 'AATP', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/docs',
           editUrl: ({versionDocsDirPath, docPath}) =>
-            `https://github.com/gs-gs/aatp/edit/main/website/${versionDocsDirPath}/${docPath}`,
+            `https://github.com/FACRC-AgTrace/AATP/edit/main/website/${versionDocsDirPath}/${docPath}`,
         },
         blog: false,
         theme: {
@@ -93,7 +93,7 @@ const config = {
             className: 'navbar-slack-link',
           },
           {
-            href: 'https://github.com/gs-gs/aatp',
+            href: 'https://github.com/FACRC-AgTrace/AATP',
             html: '<svg class="icon"><use xlink:href="#github"></use></svg><span class="menu-item-name">Github</span>',
             className: 'navbar-github-link',
             position: 'right',
