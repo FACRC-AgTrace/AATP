@@ -14,6 +14,7 @@ Summary list of software products and status of implementation. Scope defines th
 | [CIBO Labs](#cibo-labs) | Farm Reports     | VCP, DCC, DFR    |testing|
 | [Trust Provenance](#trust-provenance)  | Trust Provenance     | VCP, DPP, DTE, DCC, DFR | testing|
 | [FreshChain](#freshchain)   | FreshChain Platform   | VCP, DPP, DFR, DTE, DCC  | testing  |
+| [Pyx](#pyx)| Identity resolver, UNTP reference suite| VCP, DPP, DFR, DTE, DCC, IDR, DIA| testing|
 
 ## Implementation Details
 
@@ -73,4 +74,23 @@ Summary list of software products and status of implementation. Scope defines th
 | Industry Sector | Process focus                               | UNTP Usage |
 | --------------- | ------------------------------------------- | ---------- |
 | Agriculture     | Horticulture food safety, export compliance | DPP, DCC   |
+
+### [Pyx](https://pyx.io/)
+
+- AATP commitment made on: 01-Sept-2024
+- Registration Country: Australia
+- Operating Countries: Global
+- Participate in pre-release UNTP Pilots? : Yes
+
+| Logo   | Implementation Statement       |
+| ------------ | ---- |
+| ![Logo](../../implementations/pyx.io/logo.jpg) | Pyx Global specializes in enhancing supply chain transparency and combating greenwashing through the development of open, scalable tools and protocols. Their services include capability building, leveraging existing investments, and implementing transparent supply chains at scale. They support businesses, regulators, and industry associations by providing simple technical approaches to demonstrate unique community values, fostering a community of Trust Architects, and offering training and enablement programs. By utilizing modern open standards like Verifiable Credentials and Decentralized Identifiers, Pyx Global ensures data interoperability, secure data exchange, and compliance with emerging ESG regulations, thereby promoting sustainable and ethical business practices. |
+
+**Product Information**
+
+| Product Name & version     | Description  | UNTP Scope & versions | Implementation Test Report|
+| ------- | ------ | ---------- | --------- |
+| [Pyx IDR](https://github.com/pyx-industries/pyx-identity-resolver) | UNTP compliant identity resolver service| IDR| TBA    |
+
+
 
