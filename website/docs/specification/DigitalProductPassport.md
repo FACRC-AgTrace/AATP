@@ -43,7 +43,7 @@ Browse the [classes, properties, and code-lists used in the DLP](https://jargon.
 
 * `BovineAnimal.Id` (and related `schemeId` and `registeredId`) MUST be drawn from the [NLIS identifier scheme](Identifiers#national-livestock-identifier-scheme-nlis) - for example `https://nlis.com.au/QDBH0132XBS01234`
 * `BovineAnimal.productCategory` SHOULD use the UN CPC schemeID `https://unstats.un.org/unsd/classifications/Econ/cpc` with `"code:""02111"` and `"name":"Bovine animals, live"`
-* `BovineAnimal.producedByParty` MUST identifiy the owner or operator of the birth farm using the [ABN identifier scheme](Identifiers#australian-business-number-abn).
+* `BovineAnimal.producedByParty` MUST identify the owner or operator of the birth farm using the [ABN identifier scheme](Identifiers#australian-business-number-abn).
 * `BovineAnimal.producedAtFacility` MUST identify the PIC of the birth farm, using the relevant state register [PIC identifier scheme](Identifiers#property-identification-codes-pic).
 * `Claim.assessmentCriteria` MUST be drawn from the allowed [vocabularies](Vocabularies.md)
 
@@ -60,7 +60,7 @@ The following technical artifacts are for use by DLP implementers.
 
 |Clickable Link|Scan the QR|Comments|
 |--|--|--|
-|[Digital Livestock Passport Verifiable Credential](https://idr.aatp.showthething.com/nlis/01/QDBH0132XBS01234)|![Digital Livestock Passport Verifiable Credential](aatp-livestock-passport.png)|Sample grass fed angus DLP. Click on the JSON tab to see the underling AATP data. Download the siagend credential to test verification in your own system|
+|[Digital Livestock Passport Verifiable Credential](https://idr.aatp.showthething.com/nlis/01/QDBH0132XBS01234)|![Digital Livestock Passport Verifiable Credential](aatp-livestock-passport.png)|Sample grass fed Angus DLP. Click on the JSON tab to see the underling AATP data. Download the signed credential to test verification in your own system|
 
 
 ## Processed Meat Passport
