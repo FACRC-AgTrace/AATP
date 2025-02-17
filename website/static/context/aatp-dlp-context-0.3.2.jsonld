@@ -1,0 +1,452 @@
+{
+  "@context": {
+    "aatp-dlp": "https://vocabulary.aatp.org/aatp/dlp0",
+    "untp-core": "https://vocabulary.uncefact.org/untp/core/0/",
+    "aatp-core": "https://vocabulary.agtrace.com.au/aatp/core/0",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@protected": true,
+    "@version": 1.1,
+    "IdentifierScheme": {
+      "@protected": true,
+      "@id": "untp-core:IdentifierScheme",
+      "@context": {}
+    },
+    "Entity": {
+      "@protected": true,
+      "@id": "untp-core:Entity",
+      "@context": {
+        "registeredId": {
+          "@id": "untp-core:registeredId",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "aatp-dlp:idScheme",
+          "@type": "@id"
+        }
+      }
+    },
+    "CredentialIssuer": {
+      "@protected": true,
+      "@id": "untp-core:CredentialIssuer",
+      "@context": {
+        "otherIdentifiers": {
+          "@id": "aatp-dlp:otherIdentifiers",
+          "@type": "@id"
+        }
+      }
+    },
+    "BovineDeclaration": {
+      "@protected": true,
+      "@id": "aatp-dlp:BovineDeclaration",
+      "@context": {
+        "referenceStandard": "untp-core:referenceStandard",
+        "referenceRegulation": "untp-core:referenceRegulation",
+        "assessmentCriteria": "untp-core:assessmentCriteria",
+        "declaredValues": "untp-core:declaredValues",
+        "compliance": "untp-core:compliance",
+        "conformityTopic": "untp-core:conformityTopic"
+      }
+    },
+    "BovineAnimal": {
+      "@protected": true,
+      "@id": "aatp-dlp:BovineAnimal",
+      "@context": {
+        "name": "untp-core:name",
+        "registeredId": "untp-core:registeredId",
+        "idScheme": "untp-core:idScheme",
+        "nlisId": "untp-core:serialNumber",
+        "mobNumber": "untp-core:batchNumber",
+        "productImage": "untp-core:productImage",
+        "description": "untp-core:description",
+        "productCategory": "untp-core:productCategory",
+        "furtherInformation": "untp-core:furtherInformation",
+        "producedByParty": "untp-core:producedByParty",
+        "producedAtFacility": "untp-core:producedAtFacility",
+        "countryOfProduction": "untp-core:countryOfProduction",
+        "dimensions": "untp-core:dimensions",
+        "birthDate": "untp-core:productionDate",
+        "characteristics": "aatp-core:characteristics",
+        "healthTreatments": "aatp-core:healthTreatments",
+        "emissionsScorecard": "untp-core:emissionsScorecard",
+        "conformityDeclarations": {
+          "@id": "aatp-dlp:conformityDeclarations",
+          "@type": "@id"
+        }
+      }
+    },
+    "DigitalLivestockPassport": {
+      "@protected": true,
+      "@id": "aatp-dlp:DigitalLivestockPassport",
+      "@context": {
+        "issuer": {
+          "@id": "aatp-dlp:issuer",
+          "@type": "@id"
+        },
+        "validFrom": {
+          "@id": "aatp-dlp:validFrom",
+          "@type": "xsd:string"
+        },
+        "validUntil": {
+          "@id": "aatp-dlp:validUntil",
+          "@type": "xsd:string"
+        },
+        "credentialSubject": {
+          "@id": "aatp-dlp:credentialSubject",
+          "@type": "@id"
+        }
+      }
+    },
+    "Animal": {
+      "@protected": true,
+      "@id": "aatp-core:Animal",
+      "@context": {
+        "name": "untp-core:name",
+        "registeredId": "untp-core:registeredId",
+        "idScheme": "untp-core:idScheme",
+        "nlisId": "untp-core:serialNumber",
+        "mobNumber": "untp-core:batchNumber",
+        "productImage": "untp-core:productImage",
+        "description": "untp-core:description",
+        "productCategory": "untp-core:productCategory",
+        "furtherInformation": "untp-core:furtherInformation",
+        "producedByParty": "untp-core:producedByParty",
+        "producedAtFacility": "untp-core:producedAtFacility",
+        "countryOfProduction": "untp-core:countryOfProduction",
+        "dimensions": "untp-core:dimensions",
+        "birthDate": "untp-core:productionDate"
+      }
+    },
+    "Classification": {
+      "@protected": true,
+      "@id": "untp-core:Classification",
+      "@context": {
+        "code": {
+          "@id": "untp-core:code",
+          "@type": "xsd:string"
+        },
+        "schemeID": {
+          "@id": "untp-core:schemeID",
+          "@type": "xsd:string"
+        },
+        "schemeName": {
+          "@id": "untp-core:schemeName",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Product": {
+      "@protected": true,
+      "@id": "untp-core:Product",
+      "@context": {
+        "registeredId": {
+          "@id": "untp-core:registeredId",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "aatp-dlp:idScheme",
+          "@type": "@id"
+        },
+        "serialNumber": {
+          "@id": "untp-core:serialNumber",
+          "@type": "xsd:string"
+        },
+        "batchNumber": {
+          "@id": "untp-core:batchNumber",
+          "@type": "xsd:string"
+        },
+        "productImage": {
+          "@protected": true,
+          "@id": "untp-core:productImage",
+          "@context": {
+            "linkURL": {
+              "@id": "untp-core:linkURL",
+              "@type": "xsd:string"
+            },
+            "linkName": {
+              "@id": "untp-core:linkName",
+              "@type": "xsd:string"
+            },
+            "linkType": {
+              "@id": "untp-core:linkType",
+              "@type": "xsd:string"
+            }
+          }
+        },
+        "productCategory": {
+          "@id": "aatp-dlp:productCategory",
+          "@type": "@id"
+        },
+        "furtherInformation": {
+          "@protected": true,
+          "@id": "untp-core:furtherInformation",
+          "@context": {
+            "linkURL": {
+              "@id": "untp-core:linkURL",
+              "@type": "xsd:string"
+            },
+            "linkName": {
+              "@id": "untp-core:linkName",
+              "@type": "xsd:string"
+            },
+            "linkType": {
+              "@id": "untp-core:linkType",
+              "@type": "xsd:string"
+            }
+          }
+        },
+        "producedByParty": {
+          "@id": "aatp-dlp:producedByParty",
+          "@type": "@id"
+        },
+        "producedAtFacility": {
+          "@id": "aatp-dlp:producedAtFacility",
+          "@type": "@id"
+        },
+        "dimensions": {
+          "@protected": true,
+          "@id": "untp-core:dimensions",
+          "@context": {
+            "weight": {
+              "@protected": true,
+              "@id": "untp-core:weight",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                  }
+                }
+              }
+            },
+            "length": {
+              "@protected": true,
+              "@id": "untp-core:length",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                  }
+                }
+              }
+            },
+            "width": {
+              "@protected": true,
+              "@id": "untp-core:width",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                  }
+                }
+              }
+            },
+            "height": {
+              "@protected": true,
+              "@id": "untp-core:height",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                  }
+                }
+              }
+            },
+            "volume": {
+              "@protected": true,
+              "@id": "untp-core:volume",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "productionDate": {
+          "@id": "untp-core:productionDate",
+          "@type": "xsd:string"
+        },
+        "countryOfProduction": {
+          "@id": "untp-core:countryOfProduction",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+          }
+        }
+      }
+    },
+    "Standard": {
+      "@protected": true,
+      "@id": "untp-core:Standard",
+      "@context": {
+        "issuingParty": {
+          "@id": "aatp-dlp:issuingParty",
+          "@type": "@id"
+        },
+        "issueDate": {
+          "@id": "untp-core:issueDate",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Regulation": {
+      "@protected": true,
+      "@id": "untp-core:Regulation",
+      "@context": {
+        "jurisdictionCountry": {
+          "@id": "untp-core:jurisdictionCountry",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+          }
+        },
+        "administeredBy": {
+          "@id": "aatp-dlp:administeredBy",
+          "@type": "@id"
+        },
+        "effectiveDate": {
+          "@id": "untp-core:effectiveDate",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Criterion": {
+      "@protected": true,
+      "@id": "untp-core:Criterion",
+      "@context": {
+        "thresholdValues": {
+          "@protected": true,
+          "@id": "untp-core:thresholdValues",
+          "@context": {
+            "metricName": {
+              "@id": "untp-core:metricName",
+              "@type": "xsd:string"
+            },
+            "metricValue": {
+              "@protected": true,
+              "@id": "untp-core:metricValue",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                  }
+                }
+              }
+            },
+            "accuracy": {
+              "@id": "untp-core:accuracy",
+              "@type": "xsd:decimal"
+            }
+          }
+        }
+      }
+    },
+    "Declaration": {
+      "@protected": true,
+      "@id": "untp-core:Declaration",
+      "@context": {
+        "referenceStandard": {
+          "@id": "aatp-dlp:referenceStandard",
+          "@type": "@id"
+        },
+        "referenceRegulation": {
+          "@id": "aatp-dlp:referenceRegulation",
+          "@type": "@id"
+        },
+        "assessmentCriteria": {
+          "@id": "aatp-dlp:assessmentCriteria",
+          "@type": "@id"
+        },
+        "declaredValues": {
+          "@protected": true,
+          "@id": "untp-core:declaredValues",
+          "@context": {
+            "metricName": {
+              "@id": "untp-core:metricName",
+              "@type": "xsd:string"
+            },
+            "metricValue": {
+              "@protected": true,
+              "@id": "untp-core:metricValue",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                  }
+                }
+              }
+            },
+            "accuracy": {
+              "@id": "untp-core:accuracy",
+              "@type": "xsd:decimal"
+            }
+          }
+        },
+        "compliance": {
+          "@id": "untp-core:compliance",
+          "@type": "xsd:boolean"
+        },
+        "conformityTopic": {
+          "@id": "untp-core:conformityTopic",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://vocabulary.uncefact.org/untp/core/0/conformityTopicCode#"
+          }
+        }
+      }
+    }
+  }
+}
