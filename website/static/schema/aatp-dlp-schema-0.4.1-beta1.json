@@ -51,15 +51,20 @@
           "type": "string"
         },
         {
-          "const": "https://vocabulary.aatp.org/aatp/dlp0.4.1-beta1",
+          "const": "https://test.uncefact.org/vocabulary/untp/dpp/0.6.0-beta7/",
+          "type": "string"
+        },
+        {
+          "const": "https://aatp.foodagility.com/context/aatp-dlp-context-0.4.1-beta1.jsonld",
           "type": "string"
         }
       ],
       "default": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://vocabulary.aatp.org/aatp/dlp0.4.1-beta1"
+        "https://test.uncefact.org/vocabulary/untp/dpp/0.6.0-beta7/",
+        "https://aatp.foodagility.com/context/aatp-dlp-context-0.4.1-beta1.jsonld"
       ],
-      "minItems": 2,
+      "minItems": 3,
       "uniqueItems": true
     },
     "id": {
