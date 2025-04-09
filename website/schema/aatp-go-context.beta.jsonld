@@ -1,0 +1,532 @@
+{
+    "@context": {
+        "aatp-go": "https://aatp.foodagility.com/context/aatp-go-context-working.jsonld",
+        "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "renderMethodPrefix": "https://w3id.org/vc/render-method#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@protected": true,
+        "@version": 1.1,
+        "IdentifierScheme": {
+            "@protected": true,
+            "@id": "untp-core:IdentifierScheme"
+        },
+        "Classification": {
+            "@protected": true,
+            "@id": "untp-core:Classification",
+            "@context": {
+                "@protected": true,
+                "code": {
+                    "@id": "untp-core:code",
+                    "@type": "xsd:string"
+                },
+                "schemeID": {
+                    "@id": "untp-core:schemeID",
+                    "@type": "xsd:string"
+                },
+                "schemeName": {
+                    "@id": "untp-core:schemeName",
+                    "@type": "xsd:string"
+                }
+            }
+        },
+        "Party": {
+            "@protected": true,
+            "@id": "untp-core:Party",
+            "@context": {
+                "@protected": true,
+                "registeredId": {
+                    "@id": "untp-core:registeredId",
+                    "@type": "xsd:string"
+                },
+                "idScheme": {
+                    "@id": "untp-core:idScheme",
+                    "@type": "@id"
+                },
+                "registrationCountry": {
+                    "@id": "untp-core:registrationCountry",
+                    "@type": "@vocab",
+                    "@context": {
+                        "@protected": true,
+                        "@vocab": "https://vocabulary.uncefact.org/CountryId"
+                    }
+                },
+                "organisationWebsite": {
+                    "@id": "untp-core:organisationWebsite",
+                    "@type": "xsd:string"
+                },
+                "industryCategory": {
+                    "@id": "untp-core:industryCategory",
+                    "@type": "@id"
+                },
+                "partyAlsoKnownAs": {
+                    "@id": "untp-core:Party",
+                    "@type": "@id",
+                    "@context": {
+                        "@protected": true,
+                        "registeredId": {
+                            "@id": "untp-core:registeredId",
+                            "@type": "xsd:string"
+                        },
+                        "idScheme": {
+                            "@id": "untp-core:idScheme",
+                            "@type": "@id"
+                        }
+                    }
+                }
+            }
+        },
+        "Endorsement": {
+            "@protected": true,
+            "@id": "untp-core:Endorsement",
+            "@context": {
+                "@protected": true,
+                "trustmark": {
+                    "@protected": true,
+                    "@id": "untp-core:trustmark",
+                    "@context": {
+                        "@protected": true,
+                        "fileName": {
+                            "@id": "untp-core:fileName",
+                            "@type": "xsd:string"
+                        },
+                        "fileType": {
+                            "@id": "untp-core:fileType",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://mimetype.io/all-types"
+                            }
+                        },
+                        "file": {
+                            "@id": "untp-core:file",
+                            "@type": "xsd:string"
+                        }
+                    }
+                },
+                "issuingAuthority": {
+                    "@id": "untp-core:Party",
+                    "@type": "@id",
+                    "@context": {
+                        "@protected": true,
+                        "registeredId": {
+                            "@id": "untp-core:registeredId",
+                            "@type": "xsd:string"
+                        },
+                        "idScheme": {
+                            "@id": "untp-core:idScheme",
+                            "@type": "@id"
+                        }
+                    }
+                },
+                "endorsementEvidence": {
+                    "@protected": true,
+                    "@id": "untp-core:endorsementEvidence",
+                    "@context": {
+                        "@protected": true,
+                        "linkURL": {
+                            "@id": "untp-core:linkURL",
+                            "@type": "xsd:string"
+                        },
+                        "linkName": {
+                            "@id": "untp-core:linkName",
+                            "@type": "xsd:string"
+                        },
+                        "linkType": {
+                            "@id": "untp-core:linkType",
+                            "@type": "xsd:string"
+                        }
+                    }
+                }
+            }
+        },
+        "PropertyAttestation": {
+            "@protected": true,
+            "@id": "aatp-go:PropertyAttestation",
+            "@context": {
+                "@protected": true,
+                "assessorLevel": {
+                    "@id": "untp-core:assessorLevel",
+                    "@type": "@vocab",
+                    "@context": {
+                        "@protected": true,
+                        "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/assessorLevelCode#"
+                    }
+                },
+                "assessmentLevel": {
+                    "@id": "untp-core:assessmentLevel",
+                    "@type": "@vocab",
+                    "@context": {
+                        "@protected": true,
+                        "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/assessmentLevelCode#"
+                    }
+                },
+                "attestationType": {
+                    "@id": "untp-core:attestationType",
+                    "@type": "@vocab",
+                    "@context": {
+                        "@protected": true,
+                        "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/attestationTypeCode#"
+                    }
+                },
+                "issuedToParty": {
+                    "@id": "untp-core:Party",
+                    "@type": "@id",
+                    "@context": {
+                        "@protected": true,
+                        "registeredId": {
+                            "@id": "untp-core:registeredId",
+                            "@type": "xsd:string"
+                        },
+                        "idScheme": {
+                            "@id": "untp-core:idScheme",
+                            "@type": "@id"
+                        }
+                    }
+                },
+                "authorisation": {
+                    "@id": "untp-core:authorisation",
+                    "@type": "@id"
+                },
+                "conformityCertificate": {
+                    "@protected": true,
+                    "@id": "untp-core:conformityCertificate",
+                    "@context": {
+                        "@protected": true,
+                        "linkURL": {
+                            "@id": "untp-core:linkURL",
+                            "@type": "xsd:string"
+                        },
+                        "linkName": {
+                            "@id": "untp-core:linkName",
+                            "@type": "xsd:string"
+                        },
+                        "linkType": {
+                            "@id": "untp-core:linkType",
+                            "@type": "xsd:string"
+                        },
+                        "hashDigest": {
+                            "@id": "untp-core:hashDigest",
+                            "@type": "xsd:string"
+                        },
+                        "hashMethod": {
+                            "@id": "untp-core:hashMethod",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                            }
+                        },
+                        "encryptionMethod": {
+                            "@id": "untp-core:encryptionMethod",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                            }
+                        }
+                    }
+                },
+                "auditableEvidence": {
+                    "@protected": true,
+                    "@id": "untp-core:auditableEvidence",
+                    "@context": {
+                        "@protected": true,
+                        "linkURL": {
+                            "@id": "untp-core:linkURL",
+                            "@type": "xsd:string"
+                        },
+                        "linkName": {
+                            "@id": "untp-core:linkName",
+                            "@type": "xsd:string"
+                        },
+                        "linkType": {
+                            "@id": "untp-core:linkType",
+                            "@type": "xsd:string"
+                        },
+                        "hashDigest": {
+                            "@id": "untp-core:hashDigest",
+                            "@type": "xsd:string"
+                        },
+                        "hashMethod": {
+                            "@id": "untp-core:hashMethod",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                            }
+                        },
+                        "encryptionMethod": {
+                            "@id": "untp-core:encryptionMethod",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                            }
+                        }
+                    }
+                },
+                "propertyBoundaries": {
+                    "@protected": true,
+                    "@id": "aatp-go:propertyBoundaries",
+                    "@context": {
+                        "@protected": true,
+                        "effectiveDate": {
+                            "@id": "aatp-go:effectiveDate",
+                            "@type": "xsd:string"
+                        },
+                        "geoJson": {
+                            "@protected": true,
+                            "@id": "geojson:geoJson",
+                            "@context": {
+                                "@protected": true,
+                                "type": {
+                                    "@id": "geojson:type",
+                                    "@type": "xsd:string"
+                                },
+                                "coordinates": {
+                                    "@protected": true,
+                                    "@id": "geojson:coordinates",
+                                    "@context": {
+                                        "@protected": true,
+                                        "data": {
+                                            "@protected": true,
+                                            "@id": "geojson:data",
+                                            "@context": {
+                                                "@protected": true,
+                                                "data": {
+                                                    "@id": "geojson:data",
+                                                    "@type": "xsd:decimal"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "historicalBoundaries": {
+                    "@protected": true,
+                    "@id": "aatp-go:historicalBoundaries",
+                    "@context": {
+                        "@protected": true,
+                        "effectiveDate": {
+                            "@id": "aatp-go:effectiveDate",
+                            "@type": "xsd:string"
+                        },
+                        "geoJson": {
+                            "@protected": true,
+                            "@id": "geojson:geoJson",
+                            "@context": {
+                                "@protected": true,
+                                "type": {
+                                    "@id": "geojson:type",
+                                    "@type": "xsd:string"
+                                },
+                                "coordinates": {
+                                    "@protected": true,
+                                    "@id": "geojson:coordinates",
+                                    "@context": {
+                                        "@protected": true,
+                                        "data": {
+                                            "@protected": true,
+                                            "@id": "geojson:data",
+                                            "@context": {
+                                                "@protected": true,
+                                                "data": {
+                                                    "@id": "geojson:data",
+                                                    "@type": "xsd:decimal"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "CredentialIssuer": {
+            "@protected": true,
+            "@id": "untp-core:CredentialIssuer",
+            "@context": {
+                "@protected": true,
+                "issuerAlsoKnownAs": {
+                    "@id": "untp-core:Party",
+                    "@type": "@id",
+                    "@context": {
+                        "@protected": true,
+                        "registeredId": {
+                            "@id": "untp-core:registeredId",
+                            "@type": "xsd:string"
+                        },
+                        "idScheme": {
+                            "@id": "untp-core:idScheme",
+                            "@type": "@id"
+                        }
+                    }
+                }
+            }
+        },
+        "Attestation": {
+            "@protected": true,
+            "@id": "untp-core:Attestation",
+            "@context": {
+                "@protected": true,
+                "assessorLevel": {
+                    "@id": "untp-core:assessorLevel",
+                    "@type": "@vocab",
+                    "@context": {
+                        "@protected": true,
+                        "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/assessorLevelCode#"
+                    }
+                },
+                "assessmentLevel": {
+                    "@id": "untp-core:assessmentLevel",
+                    "@type": "@vocab",
+                    "@context": {
+                        "@protected": true,
+                        "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/assessmentLevelCode#"
+                    }
+                },
+                "attestationType": {
+                    "@id": "untp-core:attestationType",
+                    "@type": "@vocab",
+                    "@context": {
+                        "@protected": true,
+                        "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/attestationTypeCode#"
+                    }
+                },
+                "issuedToParty": {
+                    "@id": "untp-core:Party",
+                    "@type": "@id",
+                    "@context": {
+                        "@protected": true,
+                        "registeredId": {
+                            "@id": "untp-core:registeredId",
+                            "@type": "xsd:string"
+                        },
+                        "idScheme": {
+                            "@id": "untp-core:idScheme",
+                            "@type": "@id"
+                        }
+                    }
+                },
+                "authorisation": {
+                    "@id": "untp-core:authorisation",
+                    "@type": "@id"
+                },
+                "conformityCertificate": {
+                    "@protected": true,
+                    "@id": "untp-core:conformityCertificate",
+                    "@context": {
+                        "@protected": true,
+                        "linkURL": {
+                            "@id": "untp-core:linkURL",
+                            "@type": "xsd:string"
+                        },
+                        "linkName": {
+                            "@id": "untp-core:linkName",
+                            "@type": "xsd:string"
+                        },
+                        "linkType": {
+                            "@id": "untp-core:linkType",
+                            "@type": "xsd:string"
+                        },
+                        "hashDigest": {
+                            "@id": "untp-core:hashDigest",
+                            "@type": "xsd:string"
+                        },
+                        "hashMethod": {
+                            "@id": "untp-core:hashMethod",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                            }
+                        },
+                        "encryptionMethod": {
+                            "@id": "untp-core:encryptionMethod",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                            }
+                        }
+                    }
+                },
+                "auditableEvidence": {
+                    "@protected": true,
+                    "@id": "untp-core:auditableEvidence",
+                    "@context": {
+                        "@protected": true,
+                        "linkURL": {
+                            "@id": "untp-core:linkURL",
+                            "@type": "xsd:string"
+                        },
+                        "linkName": {
+                            "@id": "untp-core:linkName",
+                            "@type": "xsd:string"
+                        },
+                        "linkType": {
+                            "@id": "untp-core:linkType",
+                            "@type": "xsd:string"
+                        },
+                        "hashDigest": {
+                            "@id": "untp-core:hashDigest",
+                            "@type": "xsd:string"
+                        },
+                        "hashMethod": {
+                            "@id": "untp-core:hashMethod",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                            }
+                        },
+                        "encryptionMethod": {
+                            "@id": "untp-core:encryptionMethod",
+                            "@type": "@vocab",
+                            "@context": {
+                                "@protected": true,
+                                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "RenderTemplate2024": {
+            "@protected": true,
+            "@id": "untp-core:RenderTemplate2024",
+            "@context": {
+                "@protected": true,
+                "mediaQuery": {
+                    "@id": "untp-core:mediaQuery",
+                    "@type": "xsd:string"
+                },
+                "template": {
+                    "@id": "renderMethodPrefix:template",
+                    "@type": "xsd:string"
+                },
+                "url": {
+                    "@id": "renderMethodPrefix:url",
+                    "@type": "xsd:string"
+                }
+            }
+        },
+        "WebRenderingTemplate2022": {
+            "@protected": true,
+            "@id": "untp-core:WebRenderingTemplate2022",
+            "@context": {
+                "@protected": true,
+                "template": {
+                    "@id": "renderMethodPrefix:template",
+                    "@type": "xsd:string"
+                }
+            }
+        }
+    }
+}
