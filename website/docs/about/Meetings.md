@@ -28,7 +28,7 @@ Join our [AATP Slack](https://join.slack.com/t/aatpworkspace/shared_invite/zt-2n
 AATP Working Group meetings are held every 4 weeks on Thursday, next meeting is **Thursday 9th of October**.
 
 * [ICS Calendar File](/meetings/AATP-Meetings.ics). Download and double click to add the meetings to your calendar.
-* [Join the meeting](meet.google.com/vap-wygd-jry). Click to join the meeting without a calendar entry.
+* [Join the meeting](https://meet.google.com/vap-wygd-jry). Click to join the meeting without a calendar entry.
 
 Each meeting will work through open issues and merge requests.
 
