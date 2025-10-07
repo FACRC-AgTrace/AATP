@@ -60,6 +60,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Global variables for reuse across the site
+      globalVariables: {
+        untpDppUrl:
+          'https://spec-untp-fbb45f.opensource.unicc.org/docs/specification/DigitalProductPassport',
+        untpBaseUrl: 'https://spec-untp-fbb45f.opensource.unicc.org',
+      },
       slackLink:
         'https://join.slack.com/t/aatpworkspace/shared_invite/zt-2nyb02frq-IjQUy5MIOZQehSNDktScEA',
       colorMode: {
