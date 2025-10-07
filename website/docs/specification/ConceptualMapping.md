@@ -77,7 +77,7 @@ The following table provides a comprehensive overview of all AATP concepts and t
 ## Notes
 
 - Concepts marked as **aligned** can be implemented directly using UNTP's existing schema and semantics.  
-- Concepts marked as **extensions** represent areas where AATP introduces new structures or workflows to address traceability and assurance gaps specific to agriculture.  
+- Concepts marked as **extensions** represent areas where AATP introduces new structures or workflows to address traceability and assurance gaps specific to Australian agriculture.  
 - Concepts marked as **profiles** use the exact UNTP structure but apply specific constraints regarding identifier schemes and industry vocabularies for Australian agriculture.
 - This mapping will be updated as both UNTP and AATP specifications evolve.
 
