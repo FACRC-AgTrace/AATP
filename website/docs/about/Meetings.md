@@ -40,7 +40,7 @@ AATP working group issues list is maintained on the [AATP Github site](https://g
 
 ## Previous Meetings Summary
 
-| Meeting | Summary                                                   | Recording              | Transcription           |
-| ------- | --------------------------------------------------------- | ---------------------- | ----------------------- |
-| date    | [1 sentence meeting summary](#2025-01-15-meeting-summary) | link to full recording | link to text transcript |
+| Meeting    | Summary                                                                                                          | Minutes                                                 |
+| ---------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 09/10/2025 | Introduction of the AATP, fundamental concepts and linked data, past proof-of-concepts and next steps discussed. | [Link to minutes](/meetings/working-group-25-10-09.pdf) |
 
