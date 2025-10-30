@@ -1,0 +1,7 @@
+const moduleScript = document.createElement('script');
+moduleScript.type = 'module';
+moduleScript.textContent = `
+  import { defineCustomElements } from "https://viz.truststack.dev/v0.0.1/loader/index.js?d=${Date.now()}";
+  defineCustomElements();
+`;
+document.head.appendChild(moduleScript);
