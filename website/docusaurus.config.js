@@ -32,7 +32,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  clientModules: [require.resolve('./src/trust-viz.js')],
   presets: [
     [
       'classic',
