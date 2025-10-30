@@ -74,11 +74,6 @@ Before starting your implementation, review [Why Implement AATP?](WhyImplement.m
 * [Identifiers](../specification/Identifiers) - Identifier schemes and identity resolution mechanisms
 * [Vocabularies](../specification/Vocabularies) - Domain-specific terms and classification schemes
 
-**Technical Artifacts**:
-* Review UNTP technical artifacts and JSON-LD contexts
-* Download [AATP schema files](../../static/schema/) for reference implementation
-* Review [working samples](../specification/) for each credential type
-
 **Outcome**: Technical understanding of credential structure, required fields, and validation rules.
 
 #### 2.2 Understand Identity Resolution Mechanisms
