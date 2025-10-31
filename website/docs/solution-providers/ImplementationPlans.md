@@ -37,7 +37,7 @@ Before starting your implementation, review [Why Implement AATP?](WhyImplement.m
 **Action**: Determine which Australian agricultural sectors and use cases your solution will support.
 
 **Considerations**:
-* **Industry sectors**: [Livestock](../guidance/Livestock.md), [Horticulture](../guidance/Horticulture.md), [Grains](../guidance/Grains.md), or multi-sector
+* **Industry sectors**: [Livestock](/docs/livestock), [Horticulture](../guidance/Horticulture.md), [Grains](../guidance/Grains.md), or multi-sector
 * **Value chain roles**: Growers, processors, certifiers, feedlots, distributors, or multi-role
 * **Credential types**: Determine which AATP credentials are relevant:
   * [Digital Product Passports](../specification/DigitalProductPassport) (Livestock, Grains, Horticulture, Processed Meat)
@@ -391,7 +391,6 @@ Choose based on your platform architecture and customer needs.
 ## Related Resources
 
 * [Implementation Steps](../guidance/index.md) - Overview for all implementer types
-* [Industry Guidance](../guidance/Livestock.md) - Sector-specific guidance
 * [Conformity Testing](../guidance/ConformityTesting.md) - Testing and validation procedures
 * [Software Register](../register/Software.md) - List of registered implementations
 * [UNTP Implementation Plans](https://spec-untp-fbb45f.opensource.unicc.org/docs/tools-and-support/ImplementationPlans#for-software-vendors) - Parent specification guidance
