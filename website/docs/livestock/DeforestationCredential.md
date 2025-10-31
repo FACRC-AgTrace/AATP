@@ -12,9 +12,7 @@ The AATP Deforestation Credential is designed to provide a high integrity attest
 
 Below is a interactive and rendered sample of a **Deforestation Credential**. Use the **Render** tap to view a human-friendly and readable version of it's content. The **JSON** tab provides the raw data that is a Digital Livestock Passport. 
 
-
 <CredentialViewer  src="/samples/deforestation-sample.json" />
-
 
 ### Logical Model
 
