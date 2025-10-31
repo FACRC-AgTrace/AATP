@@ -1,0 +1,54 @@
+{
+    "nodes": [
+        {
+            "id": "dlp",
+            "type": "DPP",
+            "title": "Digital Livestock Passport",
+            "description": "Verifiable credential rendered from JSON.",
+            "groupId": "group1",
+            "meta": {
+                "credentialSrc": "/samples/dlp-sample.json"
+            }
+        },
+        {
+            "id": "linkedCredential",
+            "type": "DCC",
+            "title": "Deforestation Credential",
+            "description": "Deforestation credential for a farm.",
+            "groupId": "group1",
+            "meta": {
+                "credentialSrc": "/samples/deforestation-sample.json"
+            }
+        },
+        {
+            "id": "deforestationAuditor",
+            "type": "TA",
+            "title": "Deforestation Auditor",
+            "description": "Deforestation auditor for a farm.",
+            "groupId": "group1"
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "source": "dlp",
+            "target": "linkedCredential"
+        },
+        {
+            "id": "e2",
+            "source": "linkedCredential",
+            "target": "deforestationAuditor"
+        }
+    ],
+    "groups": [
+        {
+            "id": "group1",
+            "title": "Livestock Producer",
+            "backgroundColor": "rgba(79, 149, 221, 0.12)",
+            "nodes": [
+                "dlp",
+                "linkedCredential"
+            ]
+        }
+    ]
+}
