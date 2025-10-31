@@ -1,9 +1,8 @@
-import React from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import HomeHeroImageUrl from '@site/static/img/home-hero.jpg';
+import Layout from '@theme/Layout';
+import React from 'react';
 
 function HomepageHero() {
   const {siteConfig} = useDocusaurusContext();
@@ -22,7 +21,9 @@ function HomepageHero() {
           </div>
         </div>
         <div className="home-hero__image-wrapper">
-          <img src={HomeHeroImageUrl} className="home-hero__image" alt="" />
+          <div className="home-hero__image">
+            <iframe src="/animations/hero-animation.html" />
+          </div>
         </div>
       </div>
     </header>
@@ -35,8 +36,9 @@ export default function Home() {
       title="Australian Agriculture Traceability Protocol"
       description="Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.">
       <main className="homepage-content">
-        <HomepageHero/>
-        <HomepageFeatures/>
+        <HomepageHero />
+        <div style={{height: '20px'}} />
+        <HomepageFeatures />
       </main>
     </Layout>
   );

@@ -1,7 +1,10 @@
 $home-content__max-width: 1200px;
 
+$background-color: #b3f4c8;
+
 .home-page {
   background: linear-gradient(180deg, #F2FCFF 0%, #FFFFFF 100%);
+  background-color: $background-color;
 }
 
 .homepage-content {
@@ -10,10 +13,14 @@ $home-content__max-width: 1200px;
 
 .home-hero {
   padding: 4rem var(--ifm-spacing-horizontal);
+  background-color: $background-color;
+  border-radius: 16px;
+  overflow: hidden;
 
   &__container {
     max-width: var(--ifm-container-width);
     margin: 0 auto;
+
 
     @media screen and (min-width: 996px) {
       display: flex;
@@ -39,6 +46,14 @@ $home-content__max-width: 1200px;
   }
 
   &__image-wrapper {
+
+    // Center horizontally on mobile/vertical layout
+    @media screen and (max-width: 995px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
     @media screen and (min-width: 996px) {
       max-width: 50%;
     }
@@ -46,6 +61,34 @@ $home-content__max-width: 1200px;
 
   &__image {
     max-width: 100%;
+
+    iframe {
+      border: none;
+      aspect-ratio: 1 / 1;
+
+      // Responsive sizing: scales smoothly from mobile to desktop
+      // Using clamp: min 250px, preferred 50vw (with max constraints), max 600px
+      width: clamp(250px, 50vw, 580px);
+      height: clamp(250px, 50vw, 580px);
+
+      // Smaller on very small screens
+      @media screen and (max-width: 576px) {
+        width: clamp(200px, 80vw, 300px);
+        height: clamp(200px, 80vw, 300px);
+      }
+
+      // Medium screens (tablets)
+      @media screen and (min-width: 577px) and (max-width: 995px) {
+        width: clamp(300px, 40vw, 500px);
+        height: clamp(300px, 40vw, 500px);
+      }
+
+      // Large desktop screens
+      @media screen and (min-width: 996px) {
+        width: clamp(500px, 40vw, 600px);
+        height: clamp(500px, 40vw, 600px);
+      }
+    }
 
     @media screen and (min-width: 996px) {
       padding: 0 0 0 75px;
@@ -64,6 +107,8 @@ $home-content__max-width: 1200px;
 
 .home-feature {
   margin: 0 0 15px 0;
+
+
 
   @media screen and (max-width: 996px) {
     text-align: center;
@@ -95,5 +140,3 @@ $home-content__max-width: 1200px;
     line-height: 24px;
   }
 }
-
-
