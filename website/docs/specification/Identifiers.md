@@ -3,6 +3,7 @@ sidebar_position: 20
 title: Identifiers
 ---
 
+import CredentialViewer from '../../src/components/CredentialViewer';
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
@@ -92,7 +93,9 @@ The NLIS register SHOULD implement the UNTP [Digital Identity Anchor](https://un
 
 ### Working Sample
 
-An [AATP Dgital Identity Anchor (NLIS)](https://idr.aatp.showthething.com/nlis/01/QBIX0987XBS01234)
+Below is a interactive and rendered version of the NLIS DIA Credential.
+
+<CredentialViewer src="/samples/dia-pic.json" />
 
 ## Property Identification Codes (PIC)
 
@@ -151,7 +154,9 @@ Each state registrar SHOULD issue identity credentials to members that link the 
 
 ### Working Sample
 
-An [AATP Dgital Identity Anchor (PIC)](https://idr.aatp.showthething.com/dpird/pic/QBIX0987?linkType=dpird:registryEntry)
+Below is a interactive and rendered version of the PIC DIA Credential.
+
+<CredentialViewer src="/samples/dia-pic.json" />
 
 ## Australian Business Number (ABN)
 
@@ -212,7 +217,9 @@ The Australian Business Register SHOULD issue identity credentials to members th
 
 ### Working Sample
 
-An [AATP Dgital Identity Anchor (ABN)](https://idr.aatp.showthething.com/ato/abn/87654321012?linkType=ato:registryEntry)
+Below is a interactive and rendered version of the ABN DIA Credential.
+
+<CredentialViewer src="/samples/dia-abn.json" />
 
 ## GS1 Global Trade Identification Numbers (GTIN)
 
@@ -282,4 +289,6 @@ The GS1 Global Register SHOULD issue identity credentials to members that link t
 
 ### Working Sample
 
-An [AATP Dgital Identity Anchor (GLN)](https://idr.aatp.showthething.com/gs1/gln/0293456789012?linkType=gs1:registryEntry)
+Below is a interactive and rendered version of the GS1 DIA Credential.
+
+<CredentialViewer src="/samples/dia-gln.json" />
