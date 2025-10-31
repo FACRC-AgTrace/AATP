@@ -3,11 +3,17 @@ sidebar_position: 2
 title: Deforestation Credential
 ---
 
+import CredentialViewer from '../../src/components/CredentialViewer';
+
 
 The AATP Deforestation Credential is designed to provide a high integrity attestation of the deforestation status of an Australian farm (aka Facility). The attestation is designed to met the requirements of the [EU Deforestation Regulation (EUDR)](https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en) as well as provide high confidence due diligence for any global food brand that wishes to confidently attach deforestation free claims to their food products.
 
 ### Deforestation Credential Example
 
+Below is a interactive and rendered sample of a **Deforestation Credential**. Use the **Render** tap to view a human-friendly and readable version of it's content. The **JSON** tab provides the raw data that is a Digital Livestock Passport. 
+
+
+<CredentialViewer  src="/samples/deforestation-sample.json" />
 
 
 ### Logical Model
@@ -17,11 +23,11 @@ The Deforestation Credential leverages the [UNTP Digital Conformity Credential](
 ### Profile Rules
 
 * `ConformityAssessment.assessedProduct` is not required.
-* `ConformityAssessment.assessedFacility` is mandatory and MUST reference the Farm [PIC (Property Identification Code)](Identifiers#property-identification-codes-pic).
-* `ConformityAssessment.assessedOrganisation` SHOULD be included and reference the farm owner or operator using the [ABN identity scheme](Identifiers#australian-business-number-abn)
+* `ConformityAssessment.assessedFacility` is mandatory and MUST reference the Farm [PIC (Property Identification Code)](/docs/specification/Identifiers#property-identification-codes-pic).
+* `ConformityAssessment.assessedOrganisation` SHOULD be included and reference the farm owner or operator using the [ABN identity scheme](/docs/specification/Identifiers#australian-business-number-abn)
 * `ConformityAttestation.authorisation` SHOULD be included and reference (via `Endorsement.issuingAuthority` an accreditation trust anchor in the `.gov.au` domain.
 * `ConformityAttestation.auditableEvidence` (eg satellite imagery) that informed the assessment SHOULD be included and MAY be encrypted via the `untp.SecureLink` object.
-* `Claim.assessmentCriteria` MUST be drawn from the allowed [vocabularies](vocabularies) for deforestation criteria.
+* `Claim.assessmentCriteria` MUST be drawn from the allowed [vocabularies](/docs/specification/vocabularies) for deforestation criteria.
 
 
 ### Technical Artifacts

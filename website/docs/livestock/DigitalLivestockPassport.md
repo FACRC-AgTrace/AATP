@@ -9,7 +9,7 @@ import CredentialViewer from '../../src/components/CredentialViewer';
 The AATP Digital Livestock Passport (DLP) adds Bovine characteristics and animal health treatment records based on the Meat and Livestock Australia (MLA) [national bovine livestock language guidelines](https://www.ausmeat.com.au/media/1521/mla-national-livestock-guidelines-2022-web_final_291122.pdf).
 
 
-### DLP Example
+### Example
 
 Below is a interactive and rendered sample of a **Digital Livestock Passport**. Use the **Render** tap to view a human-friendly and readable version of it's content. The **JSON** tab provides the raw data that is a Digital Livestock Passport. 
 

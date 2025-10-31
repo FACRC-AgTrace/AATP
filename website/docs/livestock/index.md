@@ -27,15 +27,15 @@ The interactive chart below shows an example of this in action. There is a [**Di
 
 <TrustGraph src="/samples/livestock-graph.json" />
 
-### Extending 
+<!-- ### Extending 
 
 Data can also be linked across identifiers. Livestock use NLISIDs and PICs for cattle and property identification respectively, which can be used to discover [**Digital Livestock Passports**](/docs/livestock/DigitalLivestockPassport) and **Digital Farm Records**. But, ultimately retails and importers of meat can query a **Digital Product Passport**. The emergent **Transparency Graph** makes data discoverable both about the livestock and the packaged red-meat product sold to the customer. 
 
-<TrustGraph src="/samples/livestock-graph-extended.json" />
+<TrustGraph src="/samples/livestock-graph-extended.json" /> -->
 
 ## Implementation Guidance
 
-Each implementer role should follow links to the relevant credential specifications and ensure that they are issuing credentials according to the relevant specification. In most cases the technical implementation will be done by underlying [software](../register/Software) systems. However it is still important that each actor confirm that the AATP credentials issued by their chosen systems are valid by dropping them into the [conformity testing](ConformityTesting) service. 
+Each implementer role should follow links to the relevant credential specifications and ensure that they are issuing credentials according to the relevant specification. In most cases the technical implementation will be done by underlying [software](../register/Software) systems. However it is still important that each actor confirm that the AATP credentials issued by their chosen systems are valid by dropping them into the [conformity testing](/docs/guidance/ConformityTesting) service. 
 
 | Role               | Issuer of                                                                                                                                                                                   | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
