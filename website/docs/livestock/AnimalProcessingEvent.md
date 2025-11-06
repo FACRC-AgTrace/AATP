@@ -3,6 +3,9 @@ sidebar_position: 5
 title: Animal Processing Event
 ---
 
+import CredentialViewer from '../../src/components/CredentialViewer';
+
+
 The AATP Animal Processing Event represents the processing of a batch of animals at a meat processing plant. It uses the `transformation` event type with input as a list of identified animals and output as list of processed product types identified to batch level.
 
 ### Profile Rules
@@ -18,6 +21,9 @@ The AATP Animal Processing Event represents the processing of a batch of animals
 * `TransformationEvent.actionCode` MUST be set to `add`, `TransformationEvent.bizStepCode` MUST be set to `cbv:BizStep-commissioning`, and `TransformationEvent.bizStepCode` MUST be set to `cbv:Disp-active`
 
 
-### Working Sample
+### Example
 
-An issued AATP Animal Processing Event (link TBD)
+Below is a interactive and rendered sample of a **Animal Processing Event**. Use the **Render** tap to view a human-friendly and readable version of it's content. The **JSON** tab provides the raw data.
+
+<CredentialViewer src="/samples/processor-dte.json" />
+
