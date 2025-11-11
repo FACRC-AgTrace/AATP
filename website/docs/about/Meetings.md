@@ -25,7 +25,7 @@ Join our [AATP Slack](https://join.slack.com/t/aatpworkspace/shared_invite/zt-2n
 
 ### Working Group Meetings
 
-AATP Working Group meetings are held every 4 weeks on Thursday, next meeting is **Thursday 9th of October**.
+AATP Working Group meetings are held every 4 weeks on Thursday, next meeting is **Thursday 4th of December**.
 
 * [ICS Calendar File](/meetings/AATP-Meetings.ics). Download and double click to add the meetings to your calendar.
 * [Join the meeting](https://meet.google.com/vap-wygd-jry). Click to join the meeting without a calendar entry.
@@ -40,7 +40,8 @@ AATP working group issues list is maintained on the [AATP Github site](https://g
 
 ## Previous Meetings Summary
 
-| Meeting    | Summary                                                                                                          | Minutes                                                 |
-| ---------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| 09/10/2025 | Introduction of the AATP, fundamental concepts and linked data, past proof-of-concepts and next steps discussed. | [Link to minutes](/meetings/working-group-25-10-09.pdf) |
+| Meeting    | Summary                                                                                                                          | Minutes                                                 |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 06/11/2025 | Discussion of adding additional products to the extension. Using the AGIFT guidelines as the foundation for traceability events. | [Link to minutes](/meetings/working-group-25-11-06.pdf) |
+| 09/10/2025 | Introduction of the AATP, fundamental concepts and linked data, past proof-of-concepts and next steps discussed.                 | [Link to minutes](/meetings/working-group-25-10-09.pdf) |
 
