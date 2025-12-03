@@ -24,10 +24,80 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251106T163000
+DTEND;TZID=Australia/Adelaide:20251106T173000
+DTSTAMP:20251203T010855Z
+UID:02htvbdhn2nk7kb90l7g0r2ol2@google.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/vap-wygd-jry
+RECURRENCE-ID;TZID=Australia/Adelaide:20251106T163000
+CREATED:20251001T224908Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/va
+ p-wygd-jry\nOr dial: (AU) +61 3 8594 6785 PIN: 954372218#\nMore phone numbe
+ rs: https://tel.meet/vap-wygd-jry?pin=4735417637590&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20251203T010844Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:AATP Working Group 
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1W3LDDy7qJMjBQuwsYzTkSEkZVPE1agx93jTSK
+ jM3Vm8/edit?usp=meet_tnfm_calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251009T163000
+DTEND;TZID=Australia/Adelaide:20251009T173000
+DTSTAMP:20251203T010855Z
+UID:02htvbdhn2nk7kb90l7g0r2ol2@google.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/vap-wygd-jry
+RECURRENCE-ID;TZID=Australia/Adelaide:20251009T163000
+CREATED:20251001T224908Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/va
+ p-wygd-jry\nOr dial: (AU) +61 3 8594 6785 PIN: 954372218#\nMore phone numbe
+ rs: https://tel.meet/vap-wygd-jry?pin=4735417637590&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20251203T010844Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:AATP Working Group 
+TRANSP:OPAQUE
+ATTACH;FILENAME="AATP Working Group  - 2025/10/09 16:29 ACDT - Notes by Gem
+ ini";FMTTYPE=application/vnd.google-apps.document:https://docs.google.com/d
+ ocument/d/1fyg8hPzu9ICnfhLRzLlonvtuPKO4sV5blkeFIYn-xaI/edit?usp=meet_tnfm_c
+ alendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251209T163000
+DTEND;TZID=Australia/Adelaide:20251209T173000
+DTSTAMP:20251203T010855Z
+UID:02htvbdhn2nk7kb90l7g0r2ol2@google.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/vap-wygd-jry
+RECURRENCE-ID;TZID=Australia/Adelaide:20251204T163000
+CREATED:20251001T224908Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/va
+ p-wygd-jry\nOr dial: (AU) +61 3 8594 6785 PIN: 954372218#\nMore phone numbe
+ rs: https://tel.meet/vap-wygd-jry?pin=4735417637590&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20251203T010844Z
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:AATP Working Group 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=Australia/Adelaide:20251009T163000
 DTEND;TZID=Australia/Adelaide:20251009T173000
 RRULE:FREQ=WEEKLY;WKST=SU;INTERVAL=4
-DTSTAMP:20251001T225547Z
+DTSTAMP:20251203T010855Z
 UID:02htvbdhn2nk7kb90l7g0r2ol2@google.com
 X-GOOGLE-CONFERENCE:https://meet.google.com/vap-wygd-jry
 CREATED:20251001T224908Z
@@ -38,7 +108,7 @@ DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
  t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
  ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
  ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
-LAST-MODIFIED:20251001T225442Z
+LAST-MODIFIED:20251203T010844Z
 SEQUENCE:3
 STATUS:CONFIRMED
 SUMMARY:AATP Working Group 
