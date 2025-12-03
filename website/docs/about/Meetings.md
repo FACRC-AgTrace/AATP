@@ -25,7 +25,7 @@ Join our [AATP Slack](https://join.slack.com/t/aatpworkspace/shared_invite/zt-2n
 
 ### Working Group Meetings
 
-::: info
+:::info
 Please note the next working group meeting has been changed to Tuesday, 9th of December. 
 :::
 
